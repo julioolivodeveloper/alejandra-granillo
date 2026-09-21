@@ -190,13 +190,29 @@ nav.up{background:rgba(10,21,37,0.96);backdrop-filter:blur(20px);-webkit-backdro
 .c-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:10;width:52px;height:52px;background:var(--white);border:1.5px solid var(--border);color:var(--ink);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;transition:all 0.2s;box-shadow:0 2px 12px rgba(0,0,0,0.06);}
 .c-btn:hover{background:var(--gold);color:#fff;border-color:var(--gold);}
 .c-btn svg{width:20px;height:20px;}
-.c-btn.prev{left:-26px;}.c-btn.next{right:-26px;}
-.c-btn:disabled{opacity:0.2;pointer-events:none;}
+.c-btn.prev{left:-24px;}.c-btn.next{right:-24px;}
+.c-btn:disabled{opacity:0.25;pointer-events:none;}
 .c-vp{overflow:hidden;}
 .c-track{display:flex;gap:18px;transition:transform 0.5s cubic-bezier(0.33,1,0.68,1);will-change:transform;}
 .c-slide{flex:0 0 calc((100% - 36px)/3);min-width:0;}
-.vid-wrap{aspect-ratio:9/16;background:var(--navy);overflow:hidden;position:relative;border-radius:2px;}
-.vid-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:none;}
+.reel-card{display:block;aspect-ratio:9/16;position:relative;overflow:hidden;border-radius:10px;background:linear-gradient(155deg,#0F2040 0%,#0A1525 55%,#050D1A 100%);cursor:pointer;text-decoration:none;border:1px solid rgba(196,144,42,0.18);transition:transform 0.35s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.35s,border-color 0.3s;}
+.reel-card:hover{transform:translateY(-5px);box-shadow:0 28px 60px rgba(196,144,42,0.22);border-color:rgba(196,144,42,0.45);}
+.reel-card::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent,transparent 20px,rgba(196,144,42,0.03) 20px,rgba(196,144,42,0.03) 21px);}
+.reel-inner{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:20px 18px;background:radial-gradient(ellipse at 50% 38%,rgba(196,144,42,0.07) 0%,transparent 65%);}
+.reel-top{display:flex;align-items:center;justify-content:space-between;position:relative;z-index:1;}
+.reel-num{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.18em;color:rgba(250,246,240,0.35);}
+.reel-label{display:flex;align-items:center;gap:5px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(250,246,240,0.45);}
+.reel-label svg{width:13px;height:13px;stroke:rgba(250,246,240,0.45);}
+.reel-play-wrap{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1;}
+.reel-play{width:64px;height:64px;border-radius:50%;background:rgba(196,144,42,0.12);border:1.5px solid rgba(196,144,42,0.45);display:flex;align-items:center;justify-content:center;transition:background 0.3s,border-color 0.3s,transform 0.3s;}
+.reel-card:hover .reel-play{background:rgba(196,144,42,0.88);border-color:#C4902A;transform:scale(1.08);}
+.reel-play svg{width:22px;height:22px;fill:#C4902A;margin-left:4px;transition:fill 0.3s;}
+.reel-card:hover .reel-play svg{fill:#FAF6F0;}
+.reel-bottom{display:flex;flex-direction:column;gap:6px;position:relative;z-index:1;}
+.reel-user{font-size:11px;color:rgba(250,246,240,0.5);font-family:'DM Mono',monospace;letter-spacing:0.04em;}
+.reel-cta{font-size:13px;font-weight:500;color:#C4902A;display:flex;align-items:center;gap:6px;transition:gap 0.2s;}
+.reel-card:hover .reel-cta{gap:10px;}
+.reel-cta::after{content:'→';}
 .c-dots{display:flex;justify-content:center;gap:8px;margin-top:40px;}
 .dot{width:8px;height:8px;border-radius:50%;background:#E5E0D8;border:none;padding:0;cursor:pointer;transition:background 0.2s,width 0.3s;}
 .dot.on{background:var(--gold);width:28px;border-radius:4px;}
@@ -246,17 +262,48 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
   .portfolio{padding:80px 24px;}.pc-grid{grid-template-columns:1fr 1fr;}
   .services{padding:80px 0;}.services-in{padding:0 24px;}.svc-grid{grid-template-columns:1fr;gap:16px;}
   .videos{padding:80px 0;}.videos-in{padding:0 24px;}
-  .c-slide{flex:0 0 calc((100% - 18px)/2);}.c-btn.prev{left:-6px;}.c-btn.next{right:-6px;}
+  .c-slide{flex:0 0 calc((100% - 18px)/2);}.c-btn.prev{left:-20px;}.c-btn.next{right:-20px;}
   .area{padding:80px 24px;}
   .contact-inner{padding:80px 24px;}
   footer{padding:24px;}.foot-in{flex-direction:column;gap:8px;text-align:center;}.foot-gold-line{display:none;}.foot-meta{text-align:center;}
 }
 @media(max-width:640px){
   .pc-grid{grid-template-columns:1fr;}
-  .modal-box{flex-direction:column;}.modal-img-side{flex:0 0 200px;}.modal-details-side{padding:28px 24px;}
-  .hero-btns{flex-direction:column;}.btn-g,.btn-o{width:100%;justify-content:center;}
-  .c-slide{flex:0 0 80%;}
+  .modal-box{flex-direction:column;}.modal-img-side{flex:0 0 220px;}.modal-details-side{padding:28px 20px;}
+  .modal-price{font-size:26px;}
+  .hero-btns{flex-direction:column;gap:12px;}.btn-g,.btn-o{width:100%;justify-content:center;}
+  .c-slide{flex:0 0 78%;}
+  .c-btn.prev{left:-16px;}.c-btn.next{right:-16px;}
   .wa span{display:none;}.wa{padding:14px;border-radius:50%;}
+  .stats{grid-template-columns:repeat(2,1fr);}
+  .stat-n{font-size:42px;}
+  .about-photo-wrap{max-width:100%;}
+  .about-quote{padding:28px 24px;}
+  .aq-text{font-size:15px;}
+  .services-in{padding:0 20px;}
+  .svc-card{padding:32px 24px;}
+  .area{padding:60px 20px;}
+  .area-tags{flex-wrap:wrap;gap:8px;}
+  .contact-inner{padding:60px 20px;}
+  .contact-left .dh{font-size:32px;}
+  .c-dots{gap:6px;}
+  .dot{width:6px;height:6px;}
+  .videos-hd{margin-bottom:40px;}
+  .reel-play{width:52px;height:52px;}
+  .reel-play svg{width:18px;height:18px;}
+}
+@media(max-width:420px){
+  nav{padding:0 16px;}
+  .hero-c{padding:0 16px 80px;}
+  .hero-pill{font-size:9px;}
+  .about{padding:64px 16px;}
+  .portfolio{padding:64px 16px;}
+  .pc-grid{gap:14px;}
+  .videos-in{padding:0 16px;}
+  .videos-hd .dh{font-size:clamp(28px,9vw,42px);}
+  .videos{padding:64px 0;}
+  .reel-inner{padding:16px 14px;}
+  .reel-play{width:48px;height:48px;}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;}.hero-slide.active img{animation:none;}}
 </style>
@@ -532,20 +579,111 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
     <div class="videos-hd"><div class="eye"><span class="eye-line"></span><span class="eye-txt">Videos</span></div><h2 class="dh">Mi trabajo <em>en acci&#243;n</em></h2></div>
     <div class="carousel-wrap">
       <button class="c-btn prev" id="cp" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
-      <div class="c-vp" id="cvp"><div class="c-track" id="ct">          <div class="c-slide"><div class="vid-wrap"><iframe src="https://www.instagram.com/reel/DZJKM4HEx9A/embed/" allowtransparency="true" allowfullscreen="true" scrolling="no" frameborder="0" loading="lazy"></iframe></div></div>
-          <div class="c-slide"><div class="vid-wrap"><iframe src="https://www.instagram.com/reel/DZOTya8De3M/embed/" allowtransparency="true" allowfullscreen="true" scrolling="no" frameborder="0" loading="lazy"></iframe></div></div>
-          <div class="c-slide"><div class="vid-wrap"><iframe src="https://www.instagram.com/reel/DZV7UGCGyc1/embed/" allowtransparency="true" allowfullscreen="true" scrolling="no" frameborder="0" loading="lazy"></iframe></div></div>
-          <div class="c-slide"><div class="vid-wrap"><iframe src="https://www.instagram.com/reel/DZbE6Awgpvl/embed/" allowtransparency="true" allowfullscreen="true" scrolling="no" frameborder="0" loading="lazy"></iframe></div></div>
-          <div class="c-slide"><div class="vid-wrap"><iframe src="https://www.instagram.com/reel/DZgOffEDGBx/embed/" allowtransparency="true" allowfullscreen="true" scrolling="no" frameborder="0" loading="lazy"></iframe></div></div>
-          <div class="c-slide"><div class="vid-wrap"><iframe src="https://www.instagram.com/reel/DZs_pl1mJb4/embed/" allowtransparency="true" allowfullscreen="true" scrolling="no" frameborder="0" loading="lazy"></iframe></div></div>
-          <div class="c-slide"><div class="vid-wrap"><iframe src="https://www.instagram.com/reel/DZyJMPADre7/embed/" allowtransparency="true" allowfullscreen="true" scrolling="no" frameborder="0" loading="lazy"></iframe></div></div>
-          <div class="c-slide"><div class="vid-wrap"><iframe src="https://www.instagram.com/reel/DZ5jDv6Dm_v/embed/" allowtransparency="true" allowfullscreen="true" scrolling="no" frameborder="0" loading="lazy"></iframe></div></div>
-          <div class="c-slide"><div class="vid-wrap"><iframe src="https://www.instagram.com/reel/DbVv-N7ibu2/embed/" allowtransparency="true" allowfullscreen="true" scrolling="no" frameborder="0" loading="lazy"></iframe></div></div>
-          <div class="c-slide"><div class="vid-wrap"><iframe src="https://www.instagram.com/reel/DdFmhv2C9qQ/embed/" allowtransparency="true" allowfullscreen="true" scrolling="no" frameborder="0" loading="lazy"></iframe></div></div>
-          <div class="c-slide"><div class="vid-wrap"><iframe src="https://www.instagram.com/reel/DXdQRCujYBS/embed/" allowtransparency="true" allowfullscreen="true" scrolling="no" frameborder="0" loading="lazy"></iframe></div></div></div></div>
+      <div class="c-vp" id="cvp"><div class="c-track" id="ct">
+          <div class="c-slide">
+            <a class="reel-card" href="https://www.instagram.com/reel/DZJKM4HEx9A/" target="_blank" rel="noopener noreferrer" aria-label="Ver Reel 01 en Instagram">
+              <div class="reel-inner">
+                <div class="reel-top"><span class="reel-num">01</span><span class="reel-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Reel</span></div>
+                <div class="reel-play-wrap"><div class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg></div></div>
+                <div class="reel-bottom"><span class="reel-user">@alejandra__granillo</span><span class="reel-cta">Ver en Instagram</span></div>
+              </div>
+            </a>
+          </div>
+          <div class="c-slide">
+            <a class="reel-card" href="https://www.instagram.com/reel/DZOTya8De3M/" target="_blank" rel="noopener noreferrer" aria-label="Ver Reel 02 en Instagram">
+              <div class="reel-inner">
+                <div class="reel-top"><span class="reel-num">02</span><span class="reel-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Reel</span></div>
+                <div class="reel-play-wrap"><div class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg></div></div>
+                <div class="reel-bottom"><span class="reel-user">@alejandra__granillo</span><span class="reel-cta">Ver en Instagram</span></div>
+              </div>
+            </a>
+          </div>
+          <div class="c-slide">
+            <a class="reel-card" href="https://www.instagram.com/reel/DZV7UGCGyc1/" target="_blank" rel="noopener noreferrer" aria-label="Ver Reel 03 en Instagram">
+              <div class="reel-inner">
+                <div class="reel-top"><span class="reel-num">03</span><span class="reel-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Reel</span></div>
+                <div class="reel-play-wrap"><div class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg></div></div>
+                <div class="reel-bottom"><span class="reel-user">@alejandra__granillo</span><span class="reel-cta">Ver en Instagram</span></div>
+              </div>
+            </a>
+          </div>
+          <div class="c-slide">
+            <a class="reel-card" href="https://www.instagram.com/reel/DZbE6Awgpvl/" target="_blank" rel="noopener noreferrer" aria-label="Ver Reel 04 en Instagram">
+              <div class="reel-inner">
+                <div class="reel-top"><span class="reel-num">04</span><span class="reel-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Reel</span></div>
+                <div class="reel-play-wrap"><div class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg></div></div>
+                <div class="reel-bottom"><span class="reel-user">@alejandra__granillo</span><span class="reel-cta">Ver en Instagram</span></div>
+              </div>
+            </a>
+          </div>
+          <div class="c-slide">
+            <a class="reel-card" href="https://www.instagram.com/reel/DZgOffEDGBx/" target="_blank" rel="noopener noreferrer" aria-label="Ver Reel 05 en Instagram">
+              <div class="reel-inner">
+                <div class="reel-top"><span class="reel-num">05</span><span class="reel-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Reel</span></div>
+                <div class="reel-play-wrap"><div class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg></div></div>
+                <div class="reel-bottom"><span class="reel-user">@alejandra__granillo</span><span class="reel-cta">Ver en Instagram</span></div>
+              </div>
+            </a>
+          </div>
+          <div class="c-slide">
+            <a class="reel-card" href="https://www.instagram.com/reel/DZs_pl1mJb4/" target="_blank" rel="noopener noreferrer" aria-label="Ver Reel 06 en Instagram">
+              <div class="reel-inner">
+                <div class="reel-top"><span class="reel-num">06</span><span class="reel-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Reel</span></div>
+                <div class="reel-play-wrap"><div class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg></div></div>
+                <div class="reel-bottom"><span class="reel-user">@alejandra__granillo</span><span class="reel-cta">Ver en Instagram</span></div>
+              </div>
+            </a>
+          </div>
+          <div class="c-slide">
+            <a class="reel-card" href="https://www.instagram.com/reel/DZyJMPADre7/" target="_blank" rel="noopener noreferrer" aria-label="Ver Reel 07 en Instagram">
+              <div class="reel-inner">
+                <div class="reel-top"><span class="reel-num">07</span><span class="reel-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Reel</span></div>
+                <div class="reel-play-wrap"><div class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg></div></div>
+                <div class="reel-bottom"><span class="reel-user">@alejandra__granillo</span><span class="reel-cta">Ver en Instagram</span></div>
+              </div>
+            </a>
+          </div>
+          <div class="c-slide">
+            <a class="reel-card" href="https://www.instagram.com/reel/DZ5jDv6Dm_v/" target="_blank" rel="noopener noreferrer" aria-label="Ver Reel 08 en Instagram">
+              <div class="reel-inner">
+                <div class="reel-top"><span class="reel-num">08</span><span class="reel-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Reel</span></div>
+                <div class="reel-play-wrap"><div class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg></div></div>
+                <div class="reel-bottom"><span class="reel-user">@alejandra__granillo</span><span class="reel-cta">Ver en Instagram</span></div>
+              </div>
+            </a>
+          </div>
+          <div class="c-slide">
+            <a class="reel-card" href="https://www.instagram.com/reel/DbVv-N7ibu2/" target="_blank" rel="noopener noreferrer" aria-label="Ver Reel 09 en Instagram">
+              <div class="reel-inner">
+                <div class="reel-top"><span class="reel-num">09</span><span class="reel-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Reel</span></div>
+                <div class="reel-play-wrap"><div class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg></div></div>
+                <div class="reel-bottom"><span class="reel-user">@alejandra__granillo</span><span class="reel-cta">Ver en Instagram</span></div>
+              </div>
+            </a>
+          </div>
+          <div class="c-slide">
+            <a class="reel-card" href="https://www.instagram.com/reel/DdFmhv2C9qQ/" target="_blank" rel="noopener noreferrer" aria-label="Ver Reel 10 en Instagram">
+              <div class="reel-inner">
+                <div class="reel-top"><span class="reel-num">10</span><span class="reel-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Reel</span></div>
+                <div class="reel-play-wrap"><div class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg></div></div>
+                <div class="reel-bottom"><span class="reel-user">@alejandra__granillo</span><span class="reel-cta">Ver en Instagram</span></div>
+              </div>
+            </a>
+          </div>
+          <div class="c-slide">
+            <a class="reel-card" href="https://www.instagram.com/reel/DXdQRCujYBS/" target="_blank" rel="noopener noreferrer" aria-label="Ver Reel 11 en Instagram">
+              <div class="reel-inner">
+                <div class="reel-top"><span class="reel-num">11</span><span class="reel-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Reel</span></div>
+                <div class="reel-play-wrap"><div class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg></div></div>
+                <div class="reel-bottom"><span class="reel-user">@alejandra__granillo</span><span class="reel-cta">Ver en Instagram</span></div>
+              </div>
+            </a>
+          </div>
+      </div></div>
       <button class="c-btn next" id="cn" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
     </div>
-    <div class="c-dots" id="cd">      <button class="dot on" data-i="0" aria-label="Video 1"></button>
+    <div class="c-dots">
+      <button class="dot on" data-i="0" aria-label="Video 1"></button>
       <button class="dot" data-i="1" aria-label="Video 2"></button>
       <button class="dot" data-i="2" aria-label="Video 3"></button>
       <button class="dot" data-i="3" aria-label="Video 4"></button>
@@ -555,7 +693,8 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
       <button class="dot" data-i="7" aria-label="Video 8"></button>
       <button class="dot" data-i="8" aria-label="Video 9"></button>
       <button class="dot" data-i="9" aria-label="Video 10"></button>
-      <button class="dot" data-i="10" aria-label="Video 11"></button></div>
+      <button class="dot" data-i="10" aria-label="Video 11"></button>
+      </div>
   </div>
 </section>
 
