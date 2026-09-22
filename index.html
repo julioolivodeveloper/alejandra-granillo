@@ -374,6 +374,30 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
 }
 .nav-cta::after{animation-delay:0.5s;}
 .btn-call::after{animation-delay:1s;}
+
+/* ── Portfolio gold grid background ── */
+.portfolio{position:relative;}
+.portfolio::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(rgba(201,168,76,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,168,76,0.07) 1px, transparent 1px);
+  background-size:72px 72px;
+  pointer-events:none;
+  z-index:0;
+}
+.portfolio::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 50%, transparent 40%, var(--navy2) 100%);
+  pointer-events:none;
+  z-index:1;
+}
+.portfolio-in{position:relative;z-index:2;}
 </style>
 
 <div id="prog"></div>
