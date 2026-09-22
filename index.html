@@ -107,7 +107,7 @@ nav.up{background:rgba(10,21,37,0.96);backdrop-filter:blur(20px);-webkit-backdro
 .aq-name{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);}
 
 /* ===== PORTFOLIO REDESIGN ===== */
-.portfolio{padding:120px 52px;background:var(--navy2);}
+.portfolio{padding:120px 52px;background:var(--navy2);position:relative;overflow:hidden;}
 .portfolio-in{max-width:1360px;margin:0 auto;}
 .portfolio-hd{margin-bottom:64px;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;}
 .portfolio-hint{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(250,246,240,0.28);display:flex;align-items:center;gap:8px;}
@@ -398,6 +398,17 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
   z-index:1;
 }
 .portfolio-in{position:relative;z-index:2;}
+
+/* ── Portfolio background slideshow ── */
+.portfolio-bg{position:absolute;inset:0;z-index:0;}
+.portfolio-bg-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.8s ease-in-out;background-size:cover;background-position:center;background-attachment:fixed;filter:brightness(0.28) saturate(0.65);}
+.portfolio-bg-slide.active{opacity:1;}
+.portfolio-bg-ov{position:absolute;inset:0;background:rgba(8,16,30,0.55);z-index:2;}
+/* Raise grid and vignette above bg */
+.portfolio::before{z-index:3 !important;}
+.portfolio::after{z-index:4 !important;}
+.portfolio-in{position:relative;z-index:5;}
+@media(max-width:900px){.portfolio-bg-slide{background-attachment:scroll;}}
 </style>
 
 <div id="prog"></div>
@@ -495,6 +506,7 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
 
 <!-- PORTFOLIO -->
 <section class="portfolio" id="portafolio">
+  <div class="portfolio-bg" id="portfolioBg"><div class="portfolio-bg-ov"></div></div>
   <div class="portfolio-in">
     <div class="portfolio-hd">
       <div>
@@ -981,5 +993,37 @@ window.setLang=function(lang){
   try{saved=localStorage.getItem('ag_lang');}catch(e){}
   if(saved&&saved!=='es') window.setLang(saved);
 })();
+})();
+</script>
+<script>
+/* Portfolio background slideshow */
+(function(){
+  var bg = document.getElementById('portfolioBg');
+  if(!bg) return;
+  var cards = document.querySelectorAll('.pc-card img');
+  if(!cards.length) return;
+
+  /* Different order from hero: 3, 1, 4, 0, 2 */
+  var order = [3, 1, 4, 0, 2];
+  var slides = [];
+
+  order.forEach(function(i){
+    if(!cards[i]) return;
+    var s = document.createElement('div');
+    s.className = 'portfolio-bg-slide';
+    s.style.backgroundImage = 'url(' + cards[i].src + ')';
+    bg.insertBefore(s, bg.firstChild);
+    slides.push(s);
+  });
+
+  if(!slides.length) return;
+  slides[0].classList.add('active');
+  var cur = 0;
+
+  setInterval(function(){
+    slides[cur].classList.remove('active');
+    cur = (cur + 1) % slides.length;
+    slides[cur].classList.add('active');
+  }, 5000);
 })();
 </script>
