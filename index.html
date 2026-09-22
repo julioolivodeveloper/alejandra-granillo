@@ -340,20 +340,10 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
 
 /* ── Mobile nav overlay ── */
 @media(max-width:768px){
-  .nav-ham{display:flex;}
-  .nav-r{
-    position:fixed;inset:0;
-    background:var(--white);
-    flex-direction:column;align-items:center;justify-content:center;gap:36px;
-    transform:translateX(100%);transition:transform 0.35s cubic-bezier(0.4,0,0.2,1);
-    z-index:1100;
-  }
-  .nav-r.open{transform:translateX(0);}
-  .nav-a{font-size:22px !important;letter-spacing:0.04em;}
-  .nav-cta{font-size:15px !important;}
-  .lang-toggle{gap:8px;}
-  .lang-btn{font-size:15px !important;padding:6px 10px !important;}
-  body.nav-open{overflow:hidden;}
+  .nav-ham{display:none;}
+  .nav-a{display:none;}
+  .nav-r{gap:10px;}
+  .lang-toggle{gap:4px;}
 }
 
 </style>
