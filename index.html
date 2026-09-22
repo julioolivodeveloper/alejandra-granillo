@@ -315,6 +315,14 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
 
 .svc-cta{display:inline-flex;align-items:center;gap:8px;margin-top:28px;font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#C9A84C;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.3);padding-bottom:4px;transition:gap 0.2s,border-color 0.2s,color 0.2s;}
 .svc-cta:hover{gap:12px;border-color:#C9A84C;color:#C9A84C;}
+
+/* ── Language Toggle ── */
+.lang-toggle{display:flex;align-items:center;gap:4px;}
+.lang-btn{background:none;border:none;cursor:pointer;font-size:12px;font-weight:700;letter-spacing:0.1em;color:var(--faint);padding:4px 6px;border-radius:4px;transition:color 0.2s,background 0.2s;font-family:inherit;}
+.lang-btn.active{color:var(--gold);background:rgba(201,168,76,0.1);}
+.lang-btn:hover:not(.active){color:var(--ink);}
+.lang-sep{color:var(--border);font-size:12px;user-select:none;}
+@media(max-width:640px){.lang-toggle{gap:2px;}.lang-btn{padding:4px 5px;font-size:11px;}}
 </style>
 
 <div id="prog"></div>
@@ -326,12 +334,13 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
 <nav id="nav">
   <a href="#" class="nav-logo">Alejandra Granillo</a>
   <div class="nav-r">
-    <a href="#sobre-mi" class="nav-a">Sobre m&#237;</a>
-    <a href="#portafolio" class="nav-a">Portafolio</a>
-    <a href="#servicios" class="nav-a">Servicios</a>
+    <a href="#sobre-mi" class="nav-a" data-t="nav_about">Sobre m&#237;</a>
+    <a href="#portafolio" class="nav-a" data-t="nav_portfolio">Portafolio</a>
+    <a href="#servicios" class="nav-a" data-t="nav_services">Servicios</a>
+    <div class="lang-toggle"><button class="lang-btn active" data-lang="es" onclick="setLang('es')">ES</button><span class="lang-sep">|</span><button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button></div>
     <a href="https://wa.me/14154239973" class="nav-cta" target="_blank" rel="noopener">
       <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Contactar
+      <span data-t="nav_cta">Contactar</span>
     </a>
   </div>
 </nav>
@@ -351,20 +360,20 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
     <button class="hc-dot" data-i="4"></button>
   </div>
   <div class="hero-c">
-    <div class="hero-tag"><span class="hero-dot"></span><span class="hero-tag-text">Agente de Bienes Ra&#237;ces &middot; Bay Area, California</span></div>
+    <div class="hero-tag"><span class="hero-dot"></span><span class="hero-tag-text" data-t="hero_tag">Agente de Bienes Ra&#237;ces &middot; Bay Area, California</span></div>
     <h1 class="hero-name">Alejandra<b>Granillo</b></h1>
     <div class="hero-tagline-wrap"><div class="hero-tagline" id="htl">
-      <span>Tu aliada estrat&#233;gica para comprar &amp; vender en el Bay Area.</span>
-      <span>Especialista en inversiones y propiedades Fix &amp; Flip.</span>
-      <span>Servicio personalizado en espa&#241;ol e ingl&#233;s.</span>
-      <span>Tu aliada para comprar, vender e invertir con confianza.</span>
-      <span>Tu aliada estrat&#233;gica para comprar &amp; vender en el Bay Area.</span>
+      <span data-t="hero_tl1">Tu aliada estrat&#233;gica para comprar &amp; vender en el Bay Area.</span>
+      <span data-t="hero_tl2">Especialista en inversiones y propiedades Fix &amp; Flip.</span>
+      <span data-t="hero_tl3">Servicio personalizado en espa&#241;ol e ingl&#233;s.</span>
+      <span data-t="hero_tl4">Tu aliada para comprar, vender e invertir con confianza.</span>
+      <span data-t="hero_tl1">Tu aliada estrat&#233;gica para comprar &amp; vender en el Bay Area.</span>
     </div></div>
-    <div class="hero-pills"><span class="hero-pill">8+ A&#241;os</span><span class="hero-pill">Bay Area</span><span class="hero-pill">ES / EN</span></div>
+    <div class="hero-pills"><span class="hero-pill" data-t="hero_pill1">8+ A&#241;os</span><span class="hero-pill" data-t="hero_pill2">Bay Area</span><span class="hero-pill" data-t="hero_pill3">ES / EN</span></div>
     <div class="hero-btns">
       <a href="https://wa.me/14154239973" class="btn-g" target="_blank" rel="noopener">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Hablemos ahora
+        <span data-t="hero_btn1">Hablemos ahora</span>
       </a>
       <a href="#portafolio" class="btn-o">Ver portafolio <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
@@ -373,21 +382,21 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
 </section>
 
 <div class="stats">
-  <div class="stat"><span class="stat-n">8+</span><span class="stat-l">A&#241;os de experiencia</span></div>
+  <div class="stat"><span class="stat-n">8+</span><span class="stat-l" data-t="stat_l1">A&#241;os de experiencia</span></div>
   <div class="stat"><span class="stat-n">Bay Area</span><span class="stat-l">En toda el Área de la Bahía</span></div>
   <div class="stat"><span class="stat-n">ES/EN</span><span class="stat-l">Español e inglés</span></div>
-  <div class="stat"><span class="stat-n">5&#9733;</span><span class="stat-l">Calificaci&#243;n promedio</span></div>
+  <div class="stat"><span class="stat-n">5&#9733;</span><span class="stat-l" data-t="stat_l4">Calificaci&#243;n promedio</span></div>
 </div>
 
 <section class="about" id="sobre-mi">
   <div class="about-in">
     <div class="about-grid">
       <div>
-        <div class="eye"><span class="eye-line"></span><span class="eye-txt">Sobre m&#237;</span></div>
-        <h2 class="dh">Conoce a tu <em>agente</em></h2>
+        <div class="eye"><span class="eye-line"></span><span class="eye-txt" data-t="about_eye">Sobre m&#237;</span></div>
+        <h2 class="dh" data-t-html="about_h">Conoce a tu <em>agente</em></h2>
         <div class="about-body">
-          <p>Soy Alejandra Granillo, agente de bienes ra&#237;ces licenciada con profundo conocimiento del mercado inmobiliario del Bay Area. Mi misi&#243;n es guiarte en cada paso del proceso: ya sea que est&#233;s comprando tu primera casa, vendiendo una propiedad o buscando oportunidades de inversi&#243;n s&#243;lidas.</p>
-          <p>Con a&#241;os de experiencia en el mercado local, entiendo las complejidades y oportunidades &#250;nicas de esta regi&#243;n. Te ofrezco estrategia, honestidad y un servicio personalizado que convierte una decisi&#243;n importante en una experiencia exitosa.</p>
+          <p data-t="about_p1">Soy Alejandra Granillo, agente de bienes ra&#237;ces licenciada con profundo conocimiento del mercado inmobiliario del Bay Area. Mi misi&#243;n es guiarte en cada paso del proceso: ya sea que est&#233;s comprando tu primera casa, vendiendo una propiedad o buscando oportunidades de inversi&#243;n s&#243;lidas.</p>
+          <p data-t="about_p2">Con a&#241;os de experiencia en el mercado local, entiendo las complejidades y oportunidades &#250;nicas de esta regi&#243;n. Te ofrezco estrategia, honestidad y un servicio personalizado que convierte una decisi&#243;n importante en una experiencia exitosa.</p>
         </div>
         <div class="about-tags">
           <span class="tag">Licensed Realtor&#174;</span><span class="tag">Bay Area Expert</span>
@@ -412,12 +421,12 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
   <div class="portfolio-in">
     <div class="portfolio-hd">
       <div>
-        <div class="eye"><span class="eye-line"></span><span class="eye-txt">Portafolio</span></div>
+        <div class="eye"><span class="eye-line"></span><span class="eye-txt" data-t="port_eye">Portafolio</span></div>
         <h2 class="dh light">Propiedades <em>cerradas</em></h2>
       </div>
       <div class="portfolio-hint">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-        Presiona para ver detalles
+        <span data-t="port_hint">Presiona para ver detalles</span>
       </div>
     </div>
     <div class="pc-grid">
@@ -571,13 +580,13 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
 <section class="services" id="servicios">
   <div class="services-in">
     <div class="services-hd">
-      <div class="eye"><span class="eye-line"></span><span class="eye-txt">Servicios</span></div>
-      <h2 class="dh">C&#243;mo puedo <em>ayudarte</em></h2>
+      <div class="eye"><span class="eye-line"></span><span class="eye-txt" data-t="svc_eye">Servicios</span></div>
+      <h2 class="dh" data-t-html="svc_h">C&#243;mo puedo <em>ayudarte</em></h2>
     </div>
     <div class="svc-grid">
-      <div class="svc"><span class="svc-num">01</span><div class="svc-icon-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3 class="svc-title">Compra &amp; Venta de Casas</h3><p class="svc-desc">Te represento con estrategia y dedicaci&#243;n en cada negociaci&#243;n. Desde la b&#250;squeda ideal hasta el cierre, maximizando tu inversi&#243;n o el precio de venta.</p><a href="https://wa.me/14154239973" class="svc-cta" target="_blank" rel="noopener">Contactar <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div>
-      <div class="svc"><span class="svc-num">02</span><div class="svc-icon-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><h3 class="svc-title">Gesti&#243;n de Inversiones</h3><p class="svc-desc">Para inversionistas que buscan rentabilidad: identifico, eval&#250;o y gestiono propiedades de alto potencial en el Bay Area con visi&#243;n estrat&#233;gica de largo plazo.</p><a href="https://wa.me/14154239973" class="svc-cta" target="_blank" rel="noopener">Contactar <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div>
-      <div class="svc"><span class="svc-num">03</span><div class="svc-icon-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div><h3 class="svc-title">Fix &amp; Flip</h3><p class="svc-desc">Especialista en oportunidades de remodelaci&#243;n y reventa. Te ayudo a encontrar propiedades con potencial, calcular ROI y coordinar el proceso de principio a fin.</p><a href="https://wa.me/14154239973" class="svc-cta" target="_blank" rel="noopener">Contactar <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div>
+      <div class="svc"><span class="svc-num">01</span><div class="svc-icon-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3 class="svc-title" data-t="svc_t1">Compra &amp; Venta de Casas</h3><p class="svc-desc" data-t="svc_d1">Te represento con estrategia y dedicaci&#243;n en cada negociaci&#243;n. Desde la b&#250;squeda ideal hasta el cierre, maximizando tu inversi&#243;n o el precio de venta.</p><a href="https://wa.me/14154239973" class="svc-cta" target="_blank" rel="noopener" data-t="svc_cta">Contactar <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div>
+      <div class="svc"><span class="svc-num">02</span><div class="svc-icon-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><h3 class="svc-title" data-t="svc_t2">Gesti&#243;n de Inversiones</h3><p class="svc-desc" data-t="svc_d2">Para inversionistas que buscan rentabilidad: identifico, eval&#250;o y gestiono propiedades de alto potencial en el Bay Area con visi&#243;n estrat&#233;gica de largo plazo.</p><a href="https://wa.me/14154239973" class="svc-cta" target="_blank" rel="noopener" data-t="svc_cta">Contactar <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div>
+      <div class="svc"><span class="svc-num">03</span><div class="svc-icon-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div><h3 class="svc-title" data-t="svc_t3">Fix &amp; Flip</h3><p class="svc-desc" data-t="svc_d3">Especialista en oportunidades de remodelaci&#243;n y reventa. Te ayudo a encontrar propiedades con potencial, calcular ROI y coordinar el proceso de principio a fin.</p><a href="https://wa.me/14154239973" class="svc-cta" target="_blank" rel="noopener" data-t="svc_cta">Contactar <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div>
     </div>
   </div>
 </section>
@@ -586,9 +595,9 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
 
 <section class="area">
   <div class="area-in">
-    <div class="eye" style="justify-content:center"><span class="eye-line"></span><span class="eye-txt">Cobertura</span></div>
+    <div class="eye" style="justify-content:center"><span class="eye-line"></span><span class="eye-txt" data-t="area_eye">Cobertura</span></div>
     <h2 class="dh light">Bay Area, <em>California</em></h2>
-    <p class="area-desc">Opero en todo el Bay Area con conocimiento profundo del mercado local, ofreciendo ventaja estrat&#233;gica en cada transacci&#243;n.</p>
+    <p class="area-desc" data-t="area_desc">Opero en todo el Bay Area con conocimiento profundo del mercado local, ofreciendo ventaja estrat&#233;gica en cada transacci&#243;n.</p>
     <div class="area-pins">
       <span class="area-pin"><span class="area-pin-dot"></span>San Francisco</span>
       <span class="area-pin"><span class="area-pin-dot"></span>Oakland</span>
@@ -602,8 +611,8 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
 <section class="contact">
   <div class="contact-inner">
     <div class="contact-left">
-      <div class="eye"><span class="eye-line"></span><span class="eye-txt">Contacto</span></div>
-      <h2 class="dh">Hablemos de tu <em>pr&#243;ximo paso</em></h2>
+      <div class="eye"><span class="eye-line"></span><span class="eye-txt" data-t="contact_eye">Contacto</span></div>
+      <h2 class="dh" data-t-html="contact_h">Hablemos de tu <em>pr&#243;ximo paso</em></h2>
       <p class="contact-lead">&#191;Listo para comprar, vender o invertir? Escr&#237;beme por WhatsApp y te atiendo personalmente, en espa&#241;ol o ingl&#233;s.</p>
       <a href="https://wa.me/14154239973" class="btn-wa" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
