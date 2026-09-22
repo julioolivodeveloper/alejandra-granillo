@@ -1055,3 +1055,22 @@ window.setLang=function(lang){
   update();
 })();
 </script>
+
+<script>
+/* Bay Area parallax on mobile (background-attachment:fixed not supported on iOS) */
+(function(){
+  if(!window.matchMedia('(max-width:900px)').matches) return;
+  var area = document.querySelector('.area');
+  if(!area) return;
+  /* Make image taller than container so there's room to shift */
+  area.style.backgroundSize = 'auto 145%';
+  function update(){
+    var r = area.getBoundingClientRect();
+    var vh = window.innerHeight;
+    var p = Math.max(0, Math.min(1, 1 - r.bottom / (vh + r.height)));
+    area.style.backgroundPositionY = (22 + p * 56) + '%';
+  }
+  window.addEventListener('scroll', update, {passive:true});
+  update();
+})();
+</script>
