@@ -348,7 +348,7 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
 
 
 /* ── Area parallax ── */
-.area{background-attachment:fixed;overflow:hidden;}
+.area{background-attachment:fixed;}
 @media(max-width:900px){.area{background-attachment:scroll;}}
 </style>
 
@@ -807,26 +807,4 @@ document.querySelectorAll('.nav-a,.nav-cta').forEach(function(a){
     document.body.classList.remove('nav-open');
   });
 });
-</script>
-<script>
-/* Parallax for .area section */
-(function(){
-  var area=document.querySelector('.area');
-  if(!area)return;
-  var isMobile=window.matchMedia('(max-width:900px)').matches;
-  function onScroll(){
-    var rect=area.getBoundingClientRect();
-    var viewH=window.innerHeight;
-    // how far the section center is from viewport center
-    var progress=(rect.top+rect.height/2-viewH/2)/viewH;
-    var shift=progress*40; // px — tweak for more/less parallax
-    area.style.backgroundPosition='center calc(50% + '+shift+'px)';
-  }
-  if(!isMobile){
-    // disable fixed attachment, use JS instead (more reliable)
-    area.style.backgroundAttachment='scroll';
-    window.addEventListener('scroll',onScroll,{passive:true});
-    onScroll();
-  }
-})();
 </script>
