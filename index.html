@@ -1034,3 +1034,24 @@ window.setLang=function(lang){
   }, 5000);
 })();
 </script>
+<script>
+/* About section mobile: fade text as image scrolls up over it */
+(function(){
+  if(!window.matchMedia('(max-width:900px)').matches) return;
+  var grid = document.querySelector('.about-grid');
+  if(!grid) return;
+  var textCol = grid.children[0];
+  var imgCol  = grid.children[1];
+  if(!textCol||!imgCol) return;
+  var FADE_PX = 130;
+  function update(){
+    var tR = textCol.getBoundingClientRect();
+    var iR = imgCol.getBoundingClientRect();
+    var overlap = tR.bottom - iR.top;
+    var p = Math.max(0, Math.min(1, overlap / FADE_PX));
+    textCol.style.opacity = 1 - p;
+  }
+  window.addEventListener('scroll', update, {passive:true});
+  update();
+})();
+</script>
