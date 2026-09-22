@@ -323,6 +323,39 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
 .lang-btn:hover:not(.active){color:var(--ink);}
 .lang-sep{color:var(--border);font-size:12px;user-select:none;}
 @media(max-width:640px){.lang-toggle{gap:2px;}.lang-btn{padding:4px 5px;font-size:11px;}}
+
+/* ── Scroll progress bar ── */
+#prog-bar{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));z-index:2100;pointer-events:none;transition:width 0.08s linear;}
+
+/* ── Fade-up animation ── */
+.fade-up{opacity:0;transform:translateY(28px);transition:opacity 0.65s ease,transform 0.65s ease;}
+.fade-up.visible{opacity:1;transform:translateY(0);}
+
+/* ── Hamburger button ── */
+.nav-ham{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:6px;z-index:1200;position:relative;}
+.nav-ham span{display:block;width:22px;height:2px;background:var(--ink);border-radius:2px;transition:transform 0.3s,opacity 0.3s;}
+.nav-ham.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
+.nav-ham.open span:nth-child(2){opacity:0;transform:scaleX(0);}
+.nav-ham.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px);}
+
+/* ── Mobile nav overlay ── */
+@media(max-width:768px){
+  .nav-ham{display:flex;}
+  .nav-r{
+    position:fixed;inset:0;
+    background:var(--white);
+    flex-direction:column;align-items:center;justify-content:center;gap:36px;
+    transform:translateX(100%);transition:transform 0.35s cubic-bezier(0.4,0,0.2,1);
+    z-index:1100;
+  }
+  .nav-r.open{transform:translateX(0);}
+  .nav-a{font-size:22px !important;letter-spacing:0.04em;}
+  .nav-cta{font-size:15px !important;}
+  .lang-toggle{gap:8px;}
+  .lang-btn{font-size:15px !important;padding:6px 10px !important;}
+  body.nav-open{overflow:hidden;}
+}
+
 </style>
 
 <div id="prog"></div>
@@ -331,6 +364,7 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
   <span>(415) 423-9973</span>
 </a>
 
+<div id="prog-bar"></div>
 <nav id="nav">
   <a href="#" class="nav-logo">Alejandra Granillo</a>
   <div class="nav-r">
@@ -343,6 +377,7 @@ footer{background:#F7F4EF;border-top:1px solid #E5E0D8;padding:28px 52px;}
       <span data-t="nav_cta">Contactar</span>
     </a>
   </div>
+  <button class="nav-ham" id="navHam" aria-label="Men&#250;" onclick="toggleNav()"><span></span><span></span><span></span></button>
 </nav>
 
 <section class="hero">
@@ -721,4 +756,61 @@ window.addEventListener('scroll',()=>nav.classList.toggle('up',window.scrollY>60
   window.addEventListener('resize',()=>go(Math.min(cur,mx())),{passive:true});
   go(0);
 })();
+</script>
+<script>
+/* Scroll progress bar */
+(function(){
+  var bar=document.getElementById('prog-bar');
+  if(!bar)return;
+  function upd(){
+    var max=document.documentElement.scrollHeight-window.innerHeight;
+    bar.style.width=(max>0?(window.scrollY/max*100):0)+'%';
+  }
+  window.addEventListener('scroll',upd,{passive:true});
+  upd();
+})();
+
+/* Scroll fade-in via IntersectionObserver */
+(function(){
+  var sels=['.stat','.about-grid','.about-quote','.pc-card','.svc','.eye','.dh','.area-in','.contact-inner'];
+  var els=[];
+  sels.forEach(function(s){
+    document.querySelectorAll(s).forEach(function(el,i){
+      el.classList.add('fade-up');
+      if(s==='.pc-card'||s==='.svc'||s==='.stat'){
+        el.style.transitionDelay=(i*0.09)+'s';
+      }
+      els.push(el);
+    });
+  });
+  if(!('IntersectionObserver' in window)){
+    els.forEach(function(el){el.classList.add('visible');});
+    return;
+  }
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}
+    });
+  },{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){obs.observe(el);});
+})();
+
+/* Hamburger menu */
+window.toggleNav=function(){
+  var ham=document.getElementById('navHam');
+  var nav=document.querySelector('.nav-r');
+  if(!ham||!nav)return;
+  var open=ham.classList.toggle('open');
+  nav.classList.toggle('open',open);
+  document.body.classList.toggle('nav-open',open);
+};
+document.querySelectorAll('.nav-a,.nav-cta').forEach(function(a){
+  a.addEventListener('click',function(){
+    var ham=document.getElementById('navHam');
+    var nav=document.querySelector('.nav-r');
+    if(ham)ham.classList.remove('open');
+    if(nav)nav.classList.remove('open');
+    document.body.classList.remove('nav-open');
+  });
+});
 </script>
