@@ -17,7 +17,7 @@ POSTS = [
         'desc': '¿Se puede comprar casa con ITIN en California? Sí. Requisitos, cuánto enganche piden (normalmente 15% a 20%), documentos y los pasos para comprar en el Bay Area.',
         'keywords': ['comprar casa con ITIN', 'préstamo ITIN California', 'hipoteca sin seguro social', 'comprar casa sin papeles California'],
         'cities': ['pittsburg', 'antioch', 'richmond'],
-        'related': ['cuanto-enganche-para-comprar-casa-california', 'costos-de-cierre-comprador-california', 'programas-primera-casa-california'],
+        'related': ['preaprobacion-hipotecaria', 'cuanto-enganche-para-comprar-casa-california', 'puntaje-de-credito-para-comprar-casa'],
         'answer': 'Sí, puedes comprar casa en California con un ITIN en lugar de número de Seguro Social. Necesitas un préstamo hipotecario ITIN de un prestamista que lo ofrezca. En California normalmente piden entre 15% y 20% de enganche, dos años de declaraciones de impuestos con tu ITIN e historial de crédito, y la tasa suele ser más alta que la de un préstamo convencional.',
         'body': '''
 <h2>¿Qué es un ITIN y por qué importa para comprar casa?</h2>
@@ -178,7 +178,7 @@ POSTS = [
         'desc': 'Desde 3% con préstamo convencional, 3.5% con FHA y 0% con VA. Cuánto enganche necesitas en California en 2026, cuándo pagas PMI y ejemplos con casas de $600,000 a $900,000.',
         'keywords': ['cuánto enganche para comprar casa', 'down payment California', 'enganche FHA', 'PMI'],
         'cities': ['concord', 'brentwood', 'hayward'],
-        'related': ['programas-primera-casa-california', 'costos-de-cierre-comprador-california', 'casas-mas-baratas-bay-area-east-bay'],
+        'related': ['cuanto-ganar-para-comprar-casa-bay-area', 'programas-primera-casa-california', 'costos-de-cierre-comprador-california'],
         'answer': 'Menos de lo que mucha gente cree: desde 3% con un préstamo convencional para primeros compradores, 3.5% con FHA (puntaje de 580 o más) y 0% con VA para veteranos. Con 20% evitas el seguro hipotecario privado (PMI) en un préstamo convencional. Además del enganche, aparta entre 2% y 5% del precio para costos de cierre.',
         'body': '''
 <h2>¿Cuánto enganche pide cada tipo de préstamo?</h2>
@@ -239,13 +239,13 @@ POSTS = [
     },
     {
         'slug': 'costos-de-cierre-comprador-california',
-        'category': 'Comprar',
+        'category': 'Costos',
         'title': 'Costos de cierre al comprar casa en California (2026): cuánto son y qué incluyen',
         'seo_title': 'Costos de cierre al comprar casa en California (2026)',
         'desc': 'Los costos de cierre para el comprador en California suelen ser de 2% a 5% del precio. Qué incluyen, quién paga qué, el impuesto de transferencia y cómo reducirlos.',
         'keywords': ['costos de cierre California', 'closing costs comprador', 'escrow California', 'impuesto de transferencia'],
         'cities': ['oakland', 'san-leandro', 'walnut-creek'],
-        'related': ['cuanto-enganche-para-comprar-casa-california', 'programas-primera-casa-california', 'cuanto-cuesta-vender-casa-california'],
+        'related': ['impuesto-a-la-propiedad-california', 'seguro-de-casa-california', 'cuanto-enganche-para-comprar-casa-california'],
         'answer': 'Para el comprador, los costos de cierre en California suelen sumar entre 2% y 5% del precio de compra. Incluyen cargos del préstamo, tasación, escrow, seguro de título, impuestos y seguro prepagados y, a veces, parte del impuesto de transferencia. En una casa de $700,000, eso puede ser de $14,000 a $35,000.',
         'body': '''
 <h2>¿Qué incluyen los costos de cierre?</h2>
@@ -517,7 +517,7 @@ POSTS = [
         'desc': 'Cómo calcular un Fix & Flip en el Bay Area: la regla del 70%, el valor después de reparar (ARV), costos ocultos, financiamiento, permisos e impuestos. Con ejemplo en Oakland.',
         'keywords': ['fix and flip', 'regla del 70%', 'invertir en casas Bay Area', 'ARV', 'remodelar y vender casa'],
         'cities': ['oakland', 'antioch', 'richmond'],
-        'related': ['cuanto-vale-mi-casa-bay-area', 'cuanto-cuesta-vender-casa-california', 'casas-mas-baratas-bay-area-east-bay'],
+        'related': ['adu-california', 'cuanto-vale-mi-casa-bay-area', 'inspeccion-de-casa-california'],
         'answer': 'La regla del 70% dice que no debes pagar más del 70% del valor de reventa (ARV) menos el costo de las reparaciones. Si una casa se venderá en $900,000 ya remodelada y necesita $120,000 de obra, tu precio máximo sería $900,000 × 0.70 − $120,000 = $510,000. En el Bay Area es un filtro inicial: también debes sumar financiamiento, permisos, impuestos, comisiones y el tiempo de la obra.',
         'body': '''
 <h2>¿Qué es el ARV?</h2>
@@ -587,7 +587,7 @@ POSTS = [
         'desc': 'Las ciudades más accesibles del East Bay en 2026: Pittsburg, Antioch, Richmond, Brentwood, Concord, Oakland y Hayward. Precios medianos, BART y para quién conviene cada una.',
         'keywords': ['casas baratas Bay Area', 'dónde comprar casa East Bay', 'ciudades accesibles Bay Area 2026', 'casas en venta Antioch Pittsburg'],
         'cities': ['pittsburg', 'antioch', 'richmond', 'brentwood', 'concord', 'oakland', 'hayward'],
-        'related': ['cuanto-enganche-para-comprar-casa-california', 'programas-primera-casa-california', 'comprar-casa-con-itin-california'],
+        'related': ['cuanto-ganar-para-comprar-casa-bay-area', 'rentar-o-comprar-casa-bay-area', 'programas-primera-casa-california'],
         'answer': 'En 2026, las ciudades más accesibles cerca del centro del Bay Area están en el este de Contra Costa: Pittsburg y Antioch tienen precios medianos de alrededor de $590,000, seguidas por Richmond (alrededor de $650,000). Brentwood, Concord y Oakland rondan entre $745,000 y $775,000, según Redfin. Todas tienen BART o una estación cercana.',
         'body': '''
 <h2>¿Cuáles son las ciudades más accesibles en 2026?</h2>
@@ -720,6 +720,659 @@ POSTS = [
             ('California DRE: cambios en la representación de compradores', 'https://www.dre.ca.gov/Consumers/ConsumerAlert_20241114_Changes_to_Real_Estate_Representation.html'),
             ('California DRE: búsqueda pública de licencias', 'https://www2.dre.ca.gov/PublicASP/pplinfo.asp'),
             ('NAR: datos sobre el acuerdo de comisiones', 'https://www.nar.realtor/the-facts'),
+        ],
+    },
+    {
+        'slug': 'pasos-para-comprar-casa-california',
+        'category': 'Comprar',
+        'title': 'Pasos para comprar casa en California (2026): guía completa de principio a fin',
+        'seo_title': 'Pasos para comprar casa en California (2026)',
+        'desc': 'Los 10 pasos para comprar casa en California en 2026: presupuesto, preaprobación, agente, oferta, depósito, contingencias, inspección, tasación, escrow y cierre, con el tiempo de cada etapa.',
+        'keywords': ['pasos para comprar casa', 'proceso de compra de casa California', 'cómo comprar una casa', 'escrow California'],
+        'cities': ['oakland', 'concord', 'antioch'],
+        'related': ['preaprobacion-hipotecaria', 'inspeccion-de-casa-california', 'cuanto-enganche-para-comprar-casa-california'],
+        'answer': 'Para comprar casa en California: define tu presupuesto, consigue una preaprobación, firma con un agente, haz tu oferta y, cuando la acepten, deposita el dinero de buena fe en escrow (normalmente dentro de 3 días hábiles). Luego tienes un periodo de contingencias para inspección, tasación y préstamo, que en el contrato estándar suele ser de 17 días. Desde que aceptan tu oferta, el cierre suele tardar de 30 a 45 días.',
+        'body': '''
+<h2>¿Cuáles son los pasos y cuánto tarda cada uno?</h2>
+<table>
+<thead><tr><th>Paso</th><th>Qué haces</th><th>Tiempo aproximado</th></tr></thead>
+<tbody>
+<tr><td>1. Presupuesto</td><td>Calculas cuánto puedes pagar al mes y cuánto tienes ahorrado</td><td>1 a 2 semanas</td></tr>
+<tr><td>2. Preaprobación</td><td>El prestamista revisa tus documentos y te da una carta</td><td>Unos días</td></tr>
+<tr><td>3. Agente</td><td>Firmas un acuerdo por escrito con tu agente</td><td>1 día</td></tr>
+<tr><td>4. Búsqueda</td><td>Visitas casas y comparas barrios</td><td>Semanas o meses</td></tr>
+<tr><td>5. Oferta</td><td>Precio, depósito, contingencias y fecha de cierre</td><td>1 a 3 días</td></tr>
+<tr><td>6. Depósito</td><td>Envías el dinero de buena fe a escrow</td><td>Normalmente 3 días hábiles</td></tr>
+<tr><td>7. Inspecciones</td><td>General, termitas y las que hagan falta</td><td>Primera semana</td></tr>
+<tr><td>8. Tasación y préstamo</td><td>El banco valúa la casa y aprueba el préstamo</td><td>2 a 4 semanas</td></tr>
+<tr><td>9. Quitar contingencias</td><td>Confirmas por escrito que sigues adelante</td><td>Normalmente día 17</td></tr>
+<tr><td>10. Firma y cierre</td><td>Firmas, se registra la escritura y recibes las llaves</td><td>Día 30 a 45</td></tr>
+</tbody>
+</table>
+
+<h2>¿Cómo defines tu presupuesto?</h2>
+<p>Suma lo que tienes para el enganche, los costos de cierre (2% a 5% del precio) y una reserva. Después calcula un pago mensual que te deje vivir tranquilo, incluidos impuestos, seguro y HOA. Lee <a href="/blog/cuanto-ganar-para-comprar-casa-bay-area/">cuánto tienes que ganar para comprar en el Bay Area</a>.</p>
+
+<h2>¿Por qué necesitas la preaprobación antes de buscar?</h2>
+<p>En el Bay Area los vendedores casi nunca aceptan una oferta sin carta de preaprobación. Además te dice tu precio máximo real, para no enamorarte de casas que no puedes comprar. Ve <a href="/blog/preaprobacion-hipotecaria/">qué documentos piden para la preaprobación</a>.</p>
+
+<h2>¿Qué tiene que firmar el comprador con su agente?</h2>
+<p>Desde 2025, la ley de California (AB 2992) exige un acuerdo por escrito con tu agente que diga cuánto se le paga, qué servicios incluye y cuándo termina, con un máximo de 3 meses. Más detalles en <a href="/blog/que-hace-un-realtor-cuanto-cobra-california/">qué hace un realtor y cuánto cobra</a>.</p>
+
+<h2>¿Qué incluye una oferta?</h2>
+<ul>
+<li><strong>Precio</strong> y tipo de préstamo.</li>
+<li><strong>Depósito de buena fe</strong> (earnest money), que se abona a tu enganche al cerrar.</li>
+<li><strong>Contingencias:</strong> inspección, tasación y préstamo. Te permiten salirte sin perder el depósito si algo falla dentro del plazo.</li>
+<li><strong>Fecha de cierre</strong> y, si aplica, créditos que pides al vendedor.</li>
+</ul>
+
+<h2>¿Qué pasa durante el escrow?</h2>
+<p>Escrow es una compañía neutral que guarda el dinero y los documentos. Durante esas semanas haces tus inspecciones, revisas las divulgaciones del vendedor, el banco hace la tasación y aprueba el préstamo, y contratas el seguro de la casa. Antes de que venza cada contingencia decides si sigues, negocias o te sales.</p>
+
+<h2>¿Qué pasa si la tasación sale baja?</h2>
+<p>Si el tasador del banco valúa la casa por debajo del precio, el banco presta según el valor más bajo. Puedes pagar la diferencia, negociar una rebaja con el vendedor, dividir la diferencia o, si tu contingencia de tasación sigue vigente, cancelar.</p>
+
+<h2>¿Cómo es el día del cierre?</h2>
+<p>Al menos tres días hábiles antes recibes el Closing Disclosure con los montos finales. Firmas ante notario, envías el resto del dinero por transferencia y, cuando el condado registra la escritura, la casa es tuya. Ve la guía de <a href="/blog/costos-de-cierre-comprador-california/">costos de cierre</a>.</p>
+
+<h2>¿Qué errores debes evitar?</h2>
+<ul>
+<li>Buscar casa antes de tener la preaprobación.</li>
+<li>Saltarte la inspección para "ganar" la oferta sin saber lo que compras.</li>
+<li>Abrir tarjetas, comprar carro o cambiar de trabajo antes de cerrar.</li>
+<li>Dejar pasar las fechas de las contingencias sin decidir por escrito.</li>
+</ul>
+''',
+        'faq': [
+            ('¿Cuánto tarda comprar una casa en California?',
+             'La búsqueda depende de ti y del mercado. Desde que el vendedor acepta tu oferta, el cierre suele tardar de 30 a 45 días con préstamo, o menos si pagas en efectivo.'),
+            ('¿Puedo retirarme después de que aceptan mi oferta?',
+             'Sí, dentro de tus contingencias y siguiendo los pasos del contrato, y normalmente recuperas tu depósito. Si te retiras sin una contingencia vigente, podrías perderlo.'),
+            ('¿Cuánto se deposita al hacer una oferta?',
+             'Se negocia en cada oferta. En California es común un depósito de alrededor de 3% del precio, que se abona al enganche al cerrar.'),
+        ],
+        'sources': [
+            ('CFPB: guía para comprar casa', 'https://www.consumerfinance.gov/owning-a-home/'),
+            ('CFPB: el Closing Disclosure', 'https://www.consumerfinance.gov/owning-a-home/closing-disclosure/'),
+            ('California DRE: cambios en la representación de compradores', 'https://www.dre.ca.gov/Consumers/ConsumerAlert_20241114_Changes_to_Real_Estate_Representation.html'),
+        ],
+    },
+    {
+        'slug': 'preaprobacion-hipotecaria',
+        'category': 'Comprar',
+        'title': 'Preaprobación hipotecaria: qué es, qué documentos piden y cuánto dura (2026)',
+        'seo_title': 'Preaprobación hipotecaria: qué es y qué documentos piden',
+        'desc': 'Qué es la preaprobación para un préstamo de casa, en qué se diferencia de la precalificación, qué documentos piden (también si trabajas por tu cuenta), si afecta tu crédito y cuánto dura.',
+        'keywords': ['preaprobación hipotecaria', 'preaprobación para comprar casa', 'documentos para préstamo de casa', 'precalificación vs preaprobación'],
+        'cities': ['hayward', 'san-leandro', 'pittsburg'],
+        'related': ['pasos-para-comprar-casa-california', 'puntaje-de-credito-para-comprar-casa', 'cuanto-ganar-para-comprar-casa-bay-area'],
+        'answer': 'La preaprobación es una carta del prestamista que dice cuánto te puede prestar después de revisar tu crédito, ingresos, deudas y ahorros con documentos. No es lo mismo que la precalificación, que es un estimado con lo que tú le dices. En el Bay Area casi ningún vendedor acepta una oferta sin preaprobación, y normalmente es válida de 60 a 90 días.',
+        'body': '''
+<h2>¿Qué diferencia hay entre precalificación y preaprobación?</h2>
+<table>
+<thead><tr><th></th><th>Precalificación</th><th>Preaprobación</th></tr></thead>
+<tbody>
+<tr><td>Información</td><td>Lo que tú declaras</td><td>Documentos verificados y reporte de crédito</td></tr>
+<tr><td>Tiempo</td><td>Minutos</td><td>Unos días</td></tr>
+<tr><td>Peso en una oferta</td><td>Bajo</td><td>Alto: el vendedor sabe que puedes conseguir el préstamo</td></tr>
+</tbody>
+</table>
+
+<h2>¿Qué documentos piden?</h2>
+<p><strong>Si eres asalariado (W-2):</strong></p>
+<ul>
+<li>Talones de pago de los últimos 30 días.</li>
+<li>Formas W-2 de los últimos dos años.</li>
+<li>Estados de cuenta de banco de los últimos dos meses, todas las páginas.</li>
+<li>Identificación con foto y autorización para revisar tu crédito.</li>
+</ul>
+<p><strong>Si trabajas por tu cuenta o recibes 1099:</strong> las declaraciones de impuestos completas de los últimos dos años y, a veces, un estado de pérdidas y ganancias del año. Si compras con ITIN, mira los requisitos en <a href="/blog/comprar-casa-con-itin-california/">comprar casa con ITIN</a>.</p>
+
+<h2>¿La preaprobación baja tu crédito?</h2>
+<p>El prestamista hace una consulta "dura" a tu crédito, que puede bajar tu puntaje unos pocos puntos por un tiempo. Si comparas varios prestamistas en un periodo corto, los modelos de puntaje cuentan esas consultas de préstamo hipotecario como una sola. Por eso conviene comparar en la misma semana o dos. Más en <a href="/blog/puntaje-de-credito-para-comprar-casa/">qué crédito necesitas para comprar casa</a>.</p>
+
+<h2>¿Cuánto dura la carta?</h2>
+<p>Normalmente de 60 a 90 días, según el prestamista. Si se vence o cambia tu situación, el prestamista actualiza tus documentos y te da una carta nueva.</p>
+
+<h2>¿Qué no debes hacer después de la preaprobación?</h2>
+<ul>
+<li>Cambiar de trabajo o pasar de asalariado a independiente.</li>
+<li>Abrir tarjetas, financiar muebles o comprar carro.</li>
+<li>Depositar dinero que no puedas documentar.</li>
+<li>Atrasarte en cualquier pago.</li>
+</ul>
+
+<h2>¿La preaprobación garantiza el préstamo?</h2>
+<p>No. Después de aceptar tu oferta, el banco hace la aprobación final (underwriting): vuelve a revisar documentos, tasa la casa y confirma que nada cambió. La preaprobación reduce mucho el riesgo, pero no lo elimina.</p>
+
+<h2>¿Cómo comparas prestamistas?</h2>
+<p>Pide un Loan Estimate a dos o tres prestamistas el mismo día y compara la tasa, los puntos, los cargos del préstamo y el pago mensual total. Una carta de un prestamista local que responde rápido también ayuda a que el agente del vendedor confíe en tu oferta.</p>
+''',
+        'faq': [
+            ('¿Cuánto cuesta una preaprobación?',
+             'Muchos prestamistas no cobran por la preaprobación. Algunos cobran el reporte de crédito; pregunta antes de autorizarlo.'),
+            ('¿Puedo tener preaprobaciones de dos prestamistas?',
+             'Sí. Es una buena forma de comparar. Si las haces en un periodo corto, el impacto en tu crédito es mínimo.'),
+            ('¿Me pueden negar el préstamo después de preaprobarme?',
+             'Puede pasar si cambian tus ingresos, tus deudas o tu crédito, si la tasación sale baja o si aparece algo en los documentos. Por eso no debes hacer cambios financieros grandes hasta cerrar.'),
+        ],
+        'sources': [
+            ('CFPB: diferencia entre precalificación y preaprobación', 'https://www.consumerfinance.gov/ask-cfpb/whats-the-difference-between-a-prequalification-letter-and-a-preapproval-letter-en-127/'),
+            ('CFPB: cómo leer tu Loan Estimate', 'https://www.consumerfinance.gov/owning-a-home/loan-estimate/'),
+            ('CFPB: guía para comprar casa', 'https://www.consumerfinance.gov/owning-a-home/'),
+        ],
+    },
+    {
+        'slug': 'puntaje-de-credito-para-comprar-casa',
+        'category': 'Comprar',
+        'title': '¿Qué puntaje de crédito necesitas para comprar casa? Requisitos y cómo subirlo (2026)',
+        'seo_title': 'Puntaje de crédito para comprar casa (2026) y cómo subirlo',
+        'desc': 'Qué crédito necesitas para comprar casa en 2026: FHA desde 580, préstamos convencionales sin mínimo fijo de Fannie Mae desde noviembre de 2025, VA e ITIN. Y cómo subir tu puntaje antes de comprar.',
+        'keywords': ['puntaje de crédito para comprar casa', 'crédito mínimo FHA', 'cómo subir mi crédito', 'credit score para casa'],
+        'cities': ['antioch', 'pittsburg', 'richmond'],
+        'related': ['preaprobacion-hipotecaria', 'cuanto-enganche-para-comprar-casa-california', 'comprar-casa-con-itin-california'],
+        'answer': 'Con FHA puedes comprar con un puntaje de 580 y 3.5% de enganche, o de 500 a 579 con 10%. Desde noviembre de 2025 Fannie Mae ya no exige un mínimo fijo de 620 en los préstamos convencionales que evalúa con su sistema automático, aunque muchos prestamistas siguen pidiendo alrededor de 620. Un puntaje más alto te da mejor tasa, así que subirlo antes de comprar puede ahorrarte miles de dólares.',
+        'body': '''
+<h2>¿Qué puntaje pide cada tipo de préstamo?</h2>
+<table>
+<thead><tr><th>Préstamo</th><th>Puntaje que suelen pedir</th></tr></thead>
+<tbody>
+<tr><td>FHA</td><td>580 con 3.5% de enganche; 500 a 579 con 10%</td></tr>
+<tr><td>Convencional</td><td>Fannie Mae quitó el mínimo fijo de 620 en noviembre de 2025; muchos prestamistas todavía piden alrededor de 620</td></tr>
+<tr><td>VA</td><td>El VA no fija un mínimo; cada prestamista pone el suyo</td></tr>
+<tr><td>ITIN</td><td>Muchos piden alrededor de 660 o crédito alternativo</td></tr>
+<tr><td>Jumbo</td><td>Suelen pedir puntajes más altos</td></tr>
+</tbody>
+</table>
+<p>Aunque califiques con un puntaje bajo, la tasa y el seguro hipotecario serán más caros. Pasar de un rango de puntaje al siguiente puede bajar tu pago mensual.</p>
+
+<h2>¿Qué forma tu puntaje?</h2>
+<ul>
+<li><strong>Historial de pagos (35%):</strong> pagar todo a tiempo es lo más importante.</li>
+<li><strong>Cuánto debes (30%):</strong> sobre todo, qué porcentaje del límite de tus tarjetas usas.</li>
+<li><strong>Antigüedad (15%):</strong> cuánto tiempo tienen tus cuentas.</li>
+<li><strong>Crédito nuevo (10%)</strong> y <strong>tipos de crédito (10%)</strong>.</li>
+</ul>
+
+<h2>¿Cómo subes tu puntaje antes de comprar?</h2>
+<ol>
+<li><strong>Revisa tus reportes gratis</strong> en AnnualCreditReport.com y disputa los errores.</li>
+<li><strong>Baja el saldo de tus tarjetas</strong> por debajo de 30% del límite, y mejor aún de 10%.</li>
+<li><strong>Paga antes de la fecha de corte</strong> para que el reporte muestre un saldo bajo.</li>
+<li><strong>No cierres tarjetas viejas</strong>: bajan tu antigüedad y tu crédito disponible.</li>
+<li><strong>No abras crédito nuevo</strong> en los meses antes de comprar.</li>
+<li><strong>Pon tus pagos en automático</strong> para no atrasarte nunca.</li>
+<li><strong>Si no tienes historial:</strong> una tarjeta asegurada o un préstamo para construir crédito, y reportar tu renta.</li>
+<li><strong>Pide a tu prestamista un "rapid rescore"</strong> si pagaste una deuda y necesitas que se refleje rápido.</li>
+</ol>
+
+<h2>¿Qué pasa con las cuentas en cobranza?</h2>
+<p>Depende del préstamo y del monto. Algunas cobranzas pequeñas no impiden el préstamo, pero las deudas con el gobierno o los juicios pendientes suelen tener que resolverse antes. Habla con tu prestamista antes de pagar o negociar una cuenta vieja, porque el orden importa.</p>
+
+<h2>¿Sirven las compañías de "reparación de crédito"?</h2>
+<p>Nadie puede borrar información negativa que sea correcta. Lo que una compañía hace, disputar errores, lo puedes hacer tú gratis. Desconfía de quien cobra por adelantado o promete borrar todo.</p>
+''',
+        'faq': [
+            ('¿Cuánto tarda en subir mi puntaje?',
+             'Bajar el saldo de tus tarjetas puede reflejarse en uno o dos ciclos de facturación. Los atrasos pesan menos con el tiempo, pero tardan años en desaparecer del reporte.'),
+            ('¿Revisar mi propio crédito lo baja?',
+             'No. Revisar tu propio crédito es una consulta "suave" y no afecta tu puntaje. Solo las solicitudes de crédito nuevo hacen consultas "duras".'),
+            ('¿Puedo comprar casa si nunca he tenido crédito?',
+             'Sí, en algunos casos. Algunos préstamos aceptan crédito alternativo, como pagos de renta, luz y teléfono a tiempo, sobre todo los préstamos ITIN y algunos FHA.'),
+        ],
+        'sources': [
+            ('HUD: préstamos FHA', 'https://www.hud.gov/buying/loans'),
+            ('MPA: Fannie Mae elimina el puntaje mínimo en Desktop Underwriter', 'https://www.mpamag.com/us/mortgage-industry/industry-trends/fannie-mae-scraps-minimum-credit-score-for-du-loans/555870'),
+            ('AnnualCreditReport.com: reportes de crédito gratis', 'https://www.annualcreditreport.com/'),
+            ('myFICO: qué forma tu puntaje', 'https://www.myfico.com/credit-education/whats-in-your-credit-score'),
+            ('CFPB: cómo disputar un error en tu reporte de crédito', 'https://www.consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-credit-report-en-314/'),
+        ],
+    },
+    {
+        'slug': 'cuanto-ganar-para-comprar-casa-bay-area',
+        'category': 'Comprar',
+        'title': '¿Cuánto tienes que ganar para comprar casa en el Bay Area? (2026)',
+        'seo_title': '¿Cuánto tienes que ganar para comprar casa en el Bay Area? (2026)',
+        'desc': 'Cuánto ingreso necesitas para comprar casa en el Bay Area con la tasa de 7.32% de octubre de 2026: ejemplos con casas de $600,000, $775,000 y $900,000, y cómo calcula el banco lo que puedes pagar.',
+        'keywords': ['cuánto tengo que ganar para comprar casa', 'ingreso para comprar casa Bay Area', 'cuánta casa puedo pagar', 'debt to income'],
+        'cities': ['pittsburg', 'antioch', 'concord', 'oakland'],
+        'related': ['cuanto-enganche-para-comprar-casa-california', 'casas-mas-baratas-bay-area-east-bay', 'rentar-o-comprar-casa-bay-area'],
+        'answer': 'Con la tasa promedio de 7.32% a 30 años (Freddie Mac, 22 de octubre de 2026) y 10% de enganche, una casa de $600,000 tiene un pago total de unos $4,700 al mes, y necesitas ganar entre $131,000 y $156,000 al año si no tienes otras deudas. Para una casa de $775,000, el rango sube a $168,000 a $200,000. Los bancos revisan que tus deudas totales no pasen de alrededor de 43% a 50% de tu ingreso bruto.',
+        'body': '''
+<h2>¿Cómo calcula el banco cuánto puedes pagar?</h2>
+<p>El prestamista usa la <strong>relación deuda-ingreso</strong> (DTI): divide todos tus pagos mensuales de deudas, incluido el nuevo pago de la casa, entre tu ingreso bruto mensual. Muchos préstamos aceptan hasta alrededor de 43%, y algunos programas llegan a 50% si tienes buen crédito o ahorros. Que el banco te apruebe no significa que ese pago te deje vivir cómodo.</p>
+
+<h2>¿Cuánto necesitas ganar según el precio?</h2>
+<table>
+<thead><tr><th>Precio</th><th>Préstamo (10% de enganche)</th><th>Pago mensual total*</th><th>Ingreso anual necesario**</th></tr></thead>
+<tbody>
+<tr><td>$600,000</td><td>$540,000</td><td>≈ $4,700</td><td>$131,000 a $156,000</td></tr>
+<tr><td>$775,000</td><td>$697,500</td><td>≈ $6,000</td><td>$168,000 a $200,000</td></tr>
+<tr><td>$900,000</td><td>$810,000</td><td>≈ $6,950</td><td>$194,000 a $232,000</td></tr>
+</tbody>
+</table>
+<p>* Capital e intereses al 7.32% a 30 años, impuesto de propiedad de 1.2% al año, seguro de $150 al mes y seguro hipotecario (PMI) estimado. No incluye HOA.<br>** El número menor supone que el banco acepta 43% de deuda y que no tienes otras deudas; el mayor es un pago más cómodo, de 36% de tu ingreso.</p>
+<p>Como referencia, en 2026 el precio mediano está cerca de $590,000 en <a href="/areas/pittsburg/">Pittsburg</a> y <a href="/areas/antioch/">Antioch</a>, de $758,000 en <a href="/areas/concord/">Concord</a> y de $773,000 en <a href="/areas/oakland/">Oakland</a>, según Redfin.</p>
+
+<h2>¿Qué cambia el número?</h2>
+<ul>
+<li><strong>Tus otras deudas:</strong> con un límite de 43%, un pago de carro de $600 al mes sube en unos $17,000 al año el ingreso que necesitas.</li>
+<li><strong>La tasa:</strong> cada punto de tasa cambia el pago de un préstamo de $600,000 en unos $400 al mes.</li>
+<li><strong>El enganche:</strong> con 20% bajas el préstamo y eliminas el PMI.</li>
+<li><strong>El impuesto de tu ciudad y la HOA</strong>, si compras un condominio.</li>
+</ul>
+
+<h2>¿Cuentan los ingresos de toda la familia?</h2>
+<p>Si otra persona está en el préstamo, sí: se suman sus ingresos y también sus deudas. El ingreso por cuenta propia, las propinas y las horas extra cuentan si los declaras en tus impuestos, normalmente con dos años de historial.</p>
+
+<h2>¿Cómo puedes comprar con menos ingreso?</h2>
+<ul>
+<li>Buscar en <a href="/blog/casas-mas-baratas-bay-area-east-bay/">ciudades más accesibles del East Bay</a> o un condominio.</li>
+<li>Usar <a href="/blog/programas-primera-casa-california/">programas de asistencia</a> para el enganche.</li>
+<li>Negociar que el vendedor pague puntos para bajar tu tasa.</li>
+<li>Comprar con alguien más (familia o pareja) como co-prestatario.</li>
+<li>Considerar una casa con unidad adicional para rentar; lee sobre <a href="/blog/adu-california/">los ADU</a>.</li>
+</ul>
+''',
+        'faq': [
+            ('¿Qué es la relación deuda-ingreso (DTI)?',
+             'Es el porcentaje de tu ingreso bruto mensual que se va en pagos de deudas, incluida la hipoteca. Si ganas $10,000 al mes y pagas $4,300 entre casa, carro y tarjetas, tu DTI es 43%.'),
+            ('¿Y si las tasas bajan después de comprar?',
+             'Puedes refinanciar para bajar tu pago, pero no hay garantía de que bajen. Compra con un pago que puedas sostener con la tasa de hoy.'),
+            ('¿Cuenta el ingreso en efectivo que no declaro?',
+             'No. Los prestamistas solo cuentan ingresos que puedas documentar, normalmente con tus declaraciones de impuestos.'),
+        ],
+        'sources': [
+            ('Freddie Mac: encuesta semanal de tasas (PMMS)', 'https://www.freddiemac.com/pmms'),
+            ('GlobeNewswire: tasas bajan a 7.32% (22 de octubre de 2026)', 'https://www.globenewswire.com/news-release/2026/10/22/3386709/0/en/mortgage-rates-decrease-to-7-32.html'),
+            ('CFPB: qué es la relación deuda-ingreso', 'https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-to-income-ratio-en-1791/'),
+            ('Redfin: mercado de vivienda de Oakland', 'https://www.redfin.com/city/13654/CA/Oakland/housing-market'),
+        ],
+    },
+    {
+        'slug': 'rentar-o-comprar-casa-bay-area',
+        'category': 'Mercado',
+        'title': '¿Rentar o comprar casa en el Bay Area? Los números reales de 2026',
+        'seo_title': '¿Rentar o comprar en el Bay Area? Números de 2026',
+        'desc': 'Rentar o comprar en el Bay Area en 2026: comprar la casa mediana de Oakland cuesta unos $6,100 al mes con 10% de enganche, contra $2,500 a $2,800 de renta por un departamento de 2 recámaras. Cuándo sí conviene comprar.',
+        'keywords': ['rentar o comprar casa', 'conviene comprar casa 2026', 'renta vs compra Bay Area', 'renta Oakland 2026'],
+        'cities': ['oakland', 'richmond', 'hayward'],
+        'related': ['cuanto-ganar-para-comprar-casa-bay-area', 'casas-mas-baratas-bay-area-east-bay', 'adu-california'],
+        'answer': 'En 2026, comprar en el Bay Area cuesta más al mes que rentar. Con 10% de enganche y una tasa de 7.32%, la casa mediana de Oakland (unos $773,000) sale en alrededor de $6,100 al mes, mientras que un departamento de 2 recámaras se renta por unos $2,500 a $2,800. Comprar conviene si piensas quedarte varios años, quieres un pago estable y construir patrimonio. Rentar conviene si necesitas flexibilidad o todavía no tienes reservas.',
+        'body': '''
+<h2>¿Cuánto cuesta al mes rentar y cuánto comprar?</h2>
+<table>
+<thead><tr><th>Concepto</th><th>Comprar casa de $773,000 en Oakland</th><th>Rentar 2 recámaras en Oakland</th></tr></thead>
+<tbody>
+<tr><td>Pago principal</td><td>$4,779 (capital e intereses, 7.32%, 10% de enganche)</td><td>$2,500 a $2,800 de renta</td></tr>
+<tr><td>Impuesto de propiedad</td><td>≈ $837 (1.3% al año)</td><td>Incluido en la renta</td></tr>
+<tr><td>Seguro</td><td>≈ $175</td><td>Seguro de inquilino, mucho más barato</td></tr>
+<tr><td>Seguro hipotecario (PMI)</td><td>≈ $290</td><td>No aplica</td></tr>
+<tr><td><strong>Total aproximado</strong></td><td><strong>≈ $6,100 al mes</strong></td><td><strong>≈ $2,500 a $2,800 al mes</strong></td></tr>
+</tbody>
+</table>
+<p>Ojo: no es la misma vivienda. La mediana de compra incluye casas unifamiliares, y la renta es de un departamento. Un condominio de $500,000 con $450 de HOA saldría en unos $4,350 al mes con los mismos supuestos.</p>
+
+<h2>¿Qué recuperas cuando compras?</h2>
+<ul>
+<li><strong>Patrimonio:</strong> en el primer año, unos $6,600 de tus pagos bajan la deuda; esa parte crece cada año.</li>
+<li><strong>Plusvalía:</strong> históricamente las casas del Bay Area han subido de valor a largo plazo, aunque hay años en que bajan.</li>
+<li><strong>Impuesto estable:</strong> por la Proposición 13, el valor fiscal solo sube hasta 2% al año. Ve <a href="/blog/impuesto-a-la-propiedad-california/">el impuesto a la propiedad en California</a>.</li>
+<li><strong>Pago fijo:</strong> con tasa fija, tu capital e intereses no cambian en 30 años, mientras la renta suele subir.</li>
+<li><strong>Deducción de intereses:</strong> solo si detallas deducciones, y sobre hasta $750,000 de deuda hipotecaria.</li>
+</ul>
+
+<h2>¿Qué costos tiene ser dueño que no tiene rentar?</h2>
+<ul>
+<li>Mantenimiento y reparaciones: como regla general, aparta alrededor de 1% del valor de la casa al año.</li>
+<li>Costos de compra y de venta: si vendes pronto, se comen buena parte de la plusvalía.</li>
+<li>Menos flexibilidad para mudarte.</li>
+</ul>
+
+<h2>¿Cuándo conviene comprar?</h2>
+<ul>
+<li>Piensas quedarte al menos 5 a 7 años en la zona.</li>
+<li>Tienes enganche, costos de cierre y una reserva de varios meses.</li>
+<li>El pago total te deja ahorrar cada mes.</li>
+<li>Quieres estabilidad para tu familia o rentar parte de la casa (por ejemplo, un <a href="/blog/adu-california/">ADU</a>).</li>
+</ul>
+
+<h2>¿Cuándo conviene seguir rentando?</h2>
+<ul>
+<li>Podrías mudarte de ciudad o de trabajo en pocos años.</li>
+<li>Comprar te dejaría sin ahorros de emergencia.</li>
+<li>Tu renta está protegida: en California, la ley AB 1482 limita los aumentos en muchas viviendas a 5% más inflación, con un máximo de 10% al año, y ciudades como Oakland tienen además control de rentas en edificios más antiguos.</li>
+</ul>
+''',
+        'faq': [
+            ('¿Cuántos años tengo que quedarme para que convenga comprar?',
+             'Como regla general, al menos 5 a 7 años, para que la plusvalía y lo que pagas de deuda superen los costos de comprar y vender. Depende de cuánto suban los precios y la renta.'),
+            ('¿Conviene esperar a que bajen las tasas?',
+             'Nadie sabe cuándo bajarán. Si encuentras la casa correcta y el pago te funciona hoy, puedes refinanciar si bajan. Si esperas, los precios también pueden subir.'),
+            ('¿Un condominio es buena forma de empezar?',
+             'Puede serlo: el precio de entrada es menor. Revisa la cuota de HOA, las reservas de la asociación y si hay reparaciones grandes en camino.'),
+        ],
+        'sources': [
+            ('Freddie Mac: encuesta semanal de tasas (PMMS)', 'https://www.freddiemac.com/pmms'),
+            ('Apartment List: reporte de rentas de Oakland', 'https://www.apartmentlist.com/rent-report/ca/oakland'),
+            ('RentReboot: rentas en Oakland por recámaras', 'https://rentreboot.com/sf-bay/average/oakland'),
+            ('Redfin: mercado de vivienda de Oakland', 'https://www.redfin.com/city/13654/CA/Oakland/housing-market'),
+        ],
+    },
+    {
+        'slug': 'impuesto-a-la-propiedad-california',
+        'category': 'Costos',
+        'title': 'Impuesto a la propiedad en California (2026): cuánto se paga, Prop 13 y Prop 19',
+        'seo_title': 'Impuesto a la propiedad en California (2026): Prop 13 y 19',
+        'desc': 'Cuánto se paga de impuesto de propiedad en California en 2026: 1% más cargos locales (entre 1.1% y 1.4% en el Bay Area), límite de 2% anual por la Prop 13, factura suplementaria, exención de $7,000 y Prop 19.',
+        'keywords': ['impuesto a la propiedad California', 'property tax California', 'Prop 13', 'Prop 19', 'factura suplementaria'],
+        'cities': ['oakland', 'brentwood', 'walnut-creek'],
+        'related': ['costos-de-cierre-comprador-california', 'casa-heredada-california', 'seguro-de-casa-california'],
+        'answer': 'En California el impuesto a la propiedad es 1% del valor fiscal de la casa más los cargos locales aprobados por los votantes, así que en el Bay Area el total suele quedar entre 1.1% y 1.4% al año. Por la Proposición 13, el valor fiscal se fija con el precio de compra y solo puede subir hasta 2% al año mientras seas dueño. Al comprar llega una factura suplementaria, y si vives en la casa puedes pedir la exención de propietario de $7,000.',
+        'body': '''
+<h2>¿Cómo se calcula el impuesto?</h2>
+<p>Valor fiscal × tasa total de tu zona. Por ejemplo, una casa comprada en $750,000 con una tasa total de 1.25%:</p>
+<table>
+<thead><tr><th>Concepto</th><th>Monto</th></tr></thead>
+<tbody>
+<tr><td>Impuesto anual</td><td>$9,375</td></tr>
+<tr><td>Equivalente mensual</td><td>≈ $781</td></tr>
+<tr><td>Ahorro con la exención de propietario ($7,000 de valor)</td><td>≈ $88 al año</td></tr>
+</tbody>
+</table>
+<p>La tasa total cambia según la ciudad y el distrito; en Oakland suele estar entre las más altas del condado de Alameda. Revisa la factura actual de la casa antes de ofertar.</p>
+
+<h2>¿Qué dice la Proposición 13?</h2>
+<ul>
+<li>El valor fiscal se fija al comprar (o al construir algo nuevo).</li>
+<li>Mientras seas dueño, ese valor solo puede subir hasta 2% al año, aunque el mercado suba mucho más.</li>
+<li>Cuando la casa cambia de dueño, se vuelve a valorar al precio de venta.</li>
+</ul>
+<p>Por eso dos casas iguales en la misma calle pueden pagar impuestos muy distintos.</p>
+
+<h2>¿Qué es la factura suplementaria?</h2>
+<p>Cuando compras, el condado ajusta el valor de la casa a tu precio de compra a partir de la fecha del cierre. Unos meses después llega una o dos facturas suplementarias por la diferencia. Normalmente no las paga la cuenta de reserva del banco, así que aparta ese dinero.</p>
+
+<h2>¿Cuándo se paga?</h2>
+<ul>
+<li>Primera cuota: vence el 1 de noviembre y se atrasa después del 10 de diciembre.</li>
+<li>Segunda cuota: vence el 1 de febrero y se atrasa después del 10 de abril.</li>
+</ul>
+<p>Si pagas tarde se cobra una multa de 10%. Muchos préstamos incluyen el impuesto en tu pago mensual a través de una cuenta de reserva (impound).</p>
+
+<h2>¿Qué cambia la Proposición 19?</h2>
+<p><strong>Si tienes 55 años o más</strong> (o tienes una discapacidad grave, o perdiste tu casa por un incendio o desastre), puedes llevar tu valor fiscal a otra casa en cualquier parte de California, hasta tres veces, si compras la nueva dentro de dos años de vender la anterior. Si la nueva cuesta más, se suma la diferencia.</p>
+<p><strong>Si heredas de tus padres,</strong> solo conservas su valor fiscal si haces de la casa tu residencia principal, y con un límite: para transferencias del 16 de febrero de 2025 al 15 de febrero de 2027 se excluyen hasta $1,044,586 sobre su valor fiscal. Lee <a href="/blog/casa-heredada-california/">qué hacer si heredaste una casa</a>.</p>
+
+<h2>¿Hay otros cargos?</h2>
+<p>En desarrollos más nuevos, como algunos del este de Contra Costa, puede haber impuestos especiales Mello-Roos o cargos de evaluación que se suman al impuesto normal. Aparecen en la factura y en las divulgaciones; pregúntalos antes de ofertar en una casa nueva en lugares como <a href="/areas/brentwood/">Brentwood</a>.</p>
+''',
+        'faq': [
+            ('¿Sube mi impuesto si remodelo?',
+             'Solo se vuelve a valorar la parte nueva, como un cuarto agregado o un ADU. El resto de la casa conserva su valor de la Proposición 13.'),
+            ('¿Puedo pedir que bajen mi valor fiscal si los precios cayeron?',
+             'Sí. Si el valor de mercado bajó del valor fiscal, puedes pedir una reducción temporal (Proposición 8) al asesor del condado o apelar.'),
+            ('¿Hay ayuda para personas mayores?',
+             'El programa de posposición del impuesto del Contralor de California permite a personas de 62 años o más, ciegas o con discapacidad, y con ingresos dentro del límite, posponer el pago del impuesto de su casa.'),
+        ],
+        'sources': [
+            ('BOE: Proposición 19', 'https://www.boe.ca.gov/prop19/'),
+            ('BOE: ajuste de la exclusión de la Prop 19 (2025)', 'https://boe.ca.gov/news/2025/NR-25-02.htm'),
+            ('BOE: exención de propietario', 'https://www.boe.ca.gov/proptaxes/homeowners_exemption.htm'),
+            ('Contralor de California: posposición del impuesto a la propiedad', 'https://www.sco.ca.gov/ardtax_prop_tax_postponement.html'),
+        ],
+    },
+    {
+        'slug': 'inspeccion-de-casa-california',
+        'category': 'Comprar',
+        'title': 'Inspección de casa antes de comprar en California: qué revisan, cuánto cuesta y qué negociar',
+        'seo_title': 'Inspección de casa en California: qué revisan y qué negociar',
+        'desc': 'Qué incluye la inspección general y la de termitas (Sección 1 y Sección 2) al comprar casa en California, otras inspecciones que conviene hacer en el Bay Area, cuánto cuestan y cómo negociar reparaciones.',
+        'keywords': ['inspección de casa', 'home inspection California', 'inspección de termitas sección 1 sección 2', 'qué revisa un inspector'],
+        'cities': ['oakland', 'richmond', 'san-leandro'],
+        'related': ['pasos-para-comprar-casa-california', 'fix-and-flip-bay-area-regla-70', 'seguro-de-casa-california'],
+        'answer': 'Antes de comprar en California normalmente se hacen dos inspecciones: la general, que revisa estructura, techo, plomería, electricidad y sistemas, y la de termitas y hongos (pest), que separa los problemas en Sección 1 (daño o infestación activa) y Sección 2 (condiciones que pueden causarlos). Se hacen durante tu contingencia de inspección, que en el contrato estándar suele ser de 17 días, y sirven para pedir reparaciones, créditos o salirte del contrato.',
+        'body': '''
+<h2>¿Qué revisa la inspección general?</h2>
+<ul>
+<li>Cimientos, estructura y señales de movimiento.</li>
+<li>Techo, canaletas y drenaje del terreno.</li>
+<li>Plomería, calentador de agua (con sus correas sísmicas) y fugas.</li>
+<li>Panel eléctrico, cableado y enchufes.</li>
+<li>Calefacción, ventilación y aire acondicionado.</li>
+<li>Ventanas, puertas, ático, sótano o crawlspace, y detectores de humo y monóxido de carbono.</li>
+</ul>
+
+<h2>¿Qué son la Sección 1 y la Sección 2 en la inspección de termitas?</h2>
+<table>
+<thead><tr><th>Sección</th><th>Qué significa</th><th>Ejemplos</th></tr></thead>
+<tbody>
+<tr><td>Sección 1</td><td>Daño o infestación activa</td><td>Termitas, hongos o pudrición de madera</td></tr>
+<tr><td>Sección 2</td><td>Condiciones que pueden causar daño en el futuro</td><td>Humedad, fugas, madera en contacto con la tierra</td></tr>
+<tr><td>Más inspección</td><td>Áreas que no se pudieron revisar</td><td>Zonas cubiertas o sin acceso</td></tr>
+</tbody>
+</table>
+<p>Quién paga las reparaciones se negocia. Es común que el vendedor se haga cargo de la Sección 1, y algunos préstamos piden que se reparen ciertos daños antes de cerrar.</p>
+
+<h2>¿Qué otras inspecciones conviene hacer en el Bay Area?</h2>
+<ul>
+<li><strong>Tubería de drenaje (sewer lateral):</strong> una cámara revisa la tubería hasta la calle. En ciudades servidas por EBMUD, como <a href="/areas/oakland/">Oakland</a>, se necesita un certificado al vender.</li>
+<li><strong>Cimientos y refuerzo sísmico:</strong> en casas antiguas, revisa si la casa está anclada a los cimientos.</li>
+<li><strong>Techo y chimenea</strong>, si el inspector general lo recomienda.</li>
+<li><strong>Permisos:</strong> pide el historial de permisos en la ciudad para confirmar que las ampliaciones son legales.</li>
+<li><strong>Paneles solares:</strong> revisa si son propios, rentados o financiados, porque cambia el contrato.</li>
+</ul>
+
+<h2>¿Cuánto cuestan?</h2>
+<p>La inspección general suele costar varios cientos de dólares y sube con el tamaño de la casa; para una casa de 1,500 a 2,500 pies cuadrados, una referencia común es de $400 a $600. El reporte de termitas puede tener un costo aparte, y las inspecciones especiales se cobran por separado. Pide cotizaciones a inspectores locales antes de que empiece tu contingencia.</p>
+
+<h2>¿Cómo negocias lo que salga?</h2>
+<ol>
+<li>Separa lo importante (seguridad, estructura, agua, electricidad) de lo cosmético.</li>
+<li>Pide cotizaciones de contratistas para saber el costo real.</li>
+<li>Elige qué pedir: reparación, crédito al cierre o rebaja del precio. Un crédito suele ser más simple que pedir al vendedor que repare.</li>
+<li>Responde antes de que venza tu contingencia, por escrito.</li>
+</ol>
+
+<h2>¿Y si el vendedor ya hizo inspecciones?</h2>
+<p>En el Bay Area muchos vendedores entregan inspecciones previas. Léelas con tu agente, pero considera tu propia inspección, sobre todo si la casa es antigua o el reporte deja áreas sin revisar.</p>
+''',
+        'faq': [
+            ('¿Puedo comprar sin hacer inspección?',
+             'Sí, pero es arriesgado. Aunque renuncies a la contingencia para que tu oferta compita mejor, puedes hacer una inspección antes de ofertar para saber qué compras.'),
+            ('¿El vendedor tiene que arreglar todo lo que encuentre el inspector?',
+             'No. Las reparaciones se negocian. El vendedor puede aceptar, ofrecer un crédito o decir que no, y tú decides si sigues dentro de tu contingencia.'),
+            ('¿Necesito inspección si la casa es nueva?',
+             'Sí, se recomienda. Las casas nuevas también tienen errores de construcción, y es mejor encontrarlos antes de que termine la garantía del constructor.'),
+        ],
+        'sources': [
+            ('Structural Pest Control Board de California', 'https://www.pestboard.ca.gov/'),
+            ('EBMUD: tuberías de drenaje privadas (sewer lateral)', 'https://www.ebmud.com/wastewater/private-sewer-laterals'),
+            ('Earthquake Brace + Bolt: refuerzo sísmico de casas', 'https://www.earthquakebracebolt.com/'),
+        ],
+    },
+    {
+        'slug': 'seguro-de-casa-california',
+        'category': 'Costos',
+        'title': 'Seguro de casa en California (2026): por qué es difícil conseguirlo y qué opciones tienes en el Bay Area',
+        'seo_title': 'Seguro de casa en California (2026): FAIR Plan y opciones',
+        'desc': 'Cómo conseguir seguro de casa en California en 2026: por qué las aseguradoras limitaron pólizas, qué es el FAIR Plan (subió 29.1% en promedio en octubre de 2026), el seguro contra terremotos y cómo bajar el costo.',
+        'keywords': ['seguro de casa California', 'FAIR Plan California 2026', 'seguro contra incendios', 'seguro contra terremotos'],
+        'cities': ['oakland', 'walnut-creek', 'hayward'],
+        'related': ['costos-de-cierre-comprador-california', 'impuesto-a-la-propiedad-california', 'inspeccion-de-casa-california'],
+        'answer': 'Conseguir seguro de casa en California se volvió más difícil y caro porque varias aseguradoras limitaron las pólizas nuevas por el riesgo de incendios. En la mayor parte del Bay Area todavía hay opciones del mercado normal, pero en zonas de colinas con riesgo de incendio muchas personas terminan en el California FAIR Plan, que subió sus tarifas en promedio 29.1% desde el 15 de octubre de 2026. Cotiza el seguro en cuanto te acepten la oferta: el banco lo exige para cerrar.',
+        'body': '''
+<h2>¿Por qué es difícil conseguir seguro en California?</h2>
+<p>Las pérdidas por incendios forestales y el costo del reaseguro hicieron que varias aseguradoras grandes dejaran de aceptar pólizas nuevas desde 2023 o subieran sus tarifas. Para que regresen, el estado aprobó la "Estrategia de Seguros Sostenibles": las aseguradoras pueden usar modelos de catástrofe en sus tarifas a cambio de comprometerse a escribir más pólizas en zonas de riesgo.</p>
+
+<h2>¿Qué es el California FAIR Plan?</h2>
+<p>Es el seguro de último recurso para quien no consigue póliza en el mercado normal. Cubre principalmente incendio, así que normalmente se combina con una póliza complementaria (DIC) que cubre robo, responsabilidad civil y daños por agua. Desde el 15 de octubre de 2026 sus tarifas subieron en promedio 29.1%.</p>
+
+<h2>¿Cambia el riesgo según la zona del Bay Area?</h2>
+<p>Sí. Las casas en colinas con vegetación, como partes de los Oakland Hills o Montclair, suelen tener más dificultad para conseguir seguro que las casas en las planicies de ciudades como <a href="/areas/hayward/">Hayward</a>, <a href="/areas/concord/">Concord</a> o <a href="/areas/san-leandro/">San Leandro</a>. Antes de ofertar, pide una cotización con la dirección exacta.</p>
+
+<h2>¿Necesito seguro contra terremotos?</h2>
+<p>El seguro normal de casa no cubre terremotos. Se compra aparte, por ejemplo con pólizas de la California Earthquake Authority a través de tu aseguradora. Los deducibles suelen ir de 5% a 25% del valor asegurado. El banco normalmente no lo exige, pero en el Bay Area vale la pena considerarlo, sobre todo cerca de fallas como la de Hayward.</p>
+
+<h2>¿Cómo puedes conseguir mejor precio?</h2>
+<ul>
+<li><strong>Cotiza temprano:</strong> en cuanto aceptan tu oferta, no la semana del cierre.</li>
+<li><strong>Usa un agente de seguros independiente</strong> que trabaje con varias compañías.</li>
+<li><strong>Pide al vendedor el reporte CLUE</strong>, el historial de reclamos de la casa.</li>
+<li><strong>Protege la casa contra incendios:</strong> las reglas de California exigen que las aseguradoras den descuentos por medidas de mitigación, como limpiar la vegetación y usar respiraderos resistentes.</li>
+<li><strong>Revisa el techo:</strong> un techo nuevo o resistente al fuego ayuda.</li>
+<li><strong>Sube el deducible</strong> si tienes reservas, y combina el seguro de casa con el del carro.</li>
+</ul>
+
+<h2>¿Cómo afecta el seguro a cuánto puedes comprar?</h2>
+<p>El banco suma el seguro a tu pago mensual al calcular tu relación deuda-ingreso. Un seguro caro puede bajar el precio máximo que te aprueban. Inclúyelo en tu presupuesto; mira <a href="/blog/cuanto-ganar-para-comprar-casa-bay-area/">cuánto tienes que ganar para comprar</a>.</p>
+''',
+        'faq': [
+            ('¿El banco me exige seguro de casa?',
+             'Sí. Para cerrar un préstamo necesitas un seguro que cubra al menos el daño a la vivienda. El seguro contra terremotos normalmente es opcional.'),
+            ('¿Qué hago si mi aseguradora no renueva mi póliza?',
+             'En California deben avisarte con al menos 75 días de anticipación. Busca otra póliza con un agente independiente y, si no consigues, el FAIR Plan. El Departamento de Seguros de California tiene una línea de ayuda: 1-800-927-4357.'),
+            ('¿El FAIR Plan cubre todo?',
+             'No. Cubre principalmente incendio y algunos daños relacionados. Para robo, responsabilidad civil y agua normalmente necesitas una póliza complementaria (DIC).'),
+        ],
+        'sources': [
+            ('KQED: el FAIR Plan sube 29.1% en otoño de 2026', 'https://www.kqed.org/news/12094860/california-fair-plan-announces-29-1-rate-hike-for-homeowners-this-fall'),
+            ('California FAIR Plan', 'https://www.cfpnet.com/'),
+            ('Departamento de Seguros de California', 'https://www.insurance.ca.gov/'),
+            ('California Earthquake Authority', 'https://www.earthquakeauthority.com/'),
+        ],
+    },
+    {
+        'slug': 'casa-heredada-california',
+        'category': 'Vender',
+        'title': 'Heredé una casa en California: ¿vender, rentar o quedarme? Impuestos, Prop 19 y probate (2026)',
+        'seo_title': 'Heredé una casa en California: vender, rentar o quedarme',
+        'desc': 'Qué hacer si heredaste una casa en California en 2026: probate o fideicomiso, cómo funciona la Prop 19 (exclusión hasta $1,044,586), el ajuste de base al heredar y cuándo conviene vender, rentar o vivir en ella.',
+        'keywords': ['heredé una casa', 'casa heredada California', 'vender casa heredada', 'Prop 19 herencia', 'probate California'],
+        'cities': ['oakland', 'hayward', 'san-leandro'],
+        'related': ['impuesto-a-la-propiedad-california', 'cuanto-cuesta-vender-casa-california', 'cuanto-vale-mi-casa-bay-area'],
+        'answer': 'Si heredaste una casa en California, primero hay que pasar el título a tu nombre: por probate si la casa no estaba en un fideicomiso, o directamente si estaba en un living trust. Por la Proposición 19, solo conservas el valor fiscal bajo de tus padres si haces de la casa tu residencia principal, y con un límite de $1,044,586 para transferencias hasta el 15 de febrero de 2027. Si la vendes pronto, el ajuste de base al heredar (step-up) suele dejar poca o ninguna ganancia sujeta a impuestos.',
+        'body': '''
+<h2>¿Cómo pasa la casa a tu nombre?</h2>
+<table>
+<thead><tr><th>Cómo estaba la casa</th><th>Qué se hace</th></tr></thead>
+<tbody>
+<tr><td>En un fideicomiso (living trust)</td><td>El fideicomisario la transfiere o la vende sin pasar por la corte</td></tr>
+<tr><td>En "joint tenancy" con otra persona</td><td>Pasa al otro dueño con documentos del fallecimiento</td></tr>
+<tr><td>Con escritura de transferencia al fallecer (TOD deed)</td><td>Pasa al beneficiario nombrado en la escritura</td></tr>
+<tr><td>Solo a nombre de la persona fallecida, sin fideicomiso</td><td>Normalmente se necesita probate en la corte</td></tr>
+</tbody>
+</table>
+
+<h2>¿Qué es el probate y cuánto tarda?</h2>
+<p>Es el proceso en la corte para nombrar a un administrador, pagar deudas y repartir los bienes. Suele tardar muchos meses, a menudo más de un año, y la ley de California fija honorarios para el administrador y el abogado según el valor de la herencia. El procedimiento simplificado de "small estate" ($208,850 para fallecimientos desde el 1 de abril de 2025) aplica a bienes personales; para la casa, habla con un abogado de herencias.</p>
+<p>Durante el probate sí se puede vender la casa, muchas veces con aviso a los herederos o con aprobación de la corte.</p>
+
+<h2>¿Pagas impuestos si vendes la casa heredada?</h2>
+<p>Por el ajuste de base (step-up), tu costo para el impuesto federal pasa a ser el valor de la casa en la fecha del fallecimiento, no lo que pagaron tus padres. Ejemplo: tus padres la compraron en $150,000 y valía $800,000 al fallecer. Si la vendes en $810,000, la ganancia es de unos $10,000, y con los costos de venta puede ser cero. California no tiene impuesto estatal a la herencia.</p>
+
+<h2>¿Qué pasa con el impuesto a la propiedad?</h2>
+<p>Por la Proposición 19, el valor fiscal de tus padres solo se conserva si la casa pasa a ser tu residencia principal y pides la exención de propietario dentro de un año. Además hay un límite: si el valor de mercado supera el valor fiscal de tus padres en más de $1,044,586 (para transferencias del 16 de febrero de 2025 al 15 de febrero de 2027), la diferencia se suma. Si no vives en ella, se vuelve a valorar al precio de mercado. Más en <a href="/blog/impuesto-a-la-propiedad-california/">impuesto a la propiedad en California</a>.</p>
+
+<h2>¿Vender, rentar o quedarte?</h2>
+<table>
+<thead><tr><th>Opción</th><th>A favor</th><th>A considerar</th></tr></thead>
+<tbody>
+<tr><td>Vivir en ella</td><td>Puedes conservar el valor fiscal de tus padres (con límite)</td><td>Reparaciones pendientes y repartir con otros herederos</td></tr>
+<tr><td>Rentarla</td><td>Ingreso mensual y posible plusvalía</td><td>El impuesto sube al valor de mercado; eres arrendador con obligaciones legales</td></tr>
+<tr><td>Venderla</td><td>Dinero para repartir; el step-up reduce el impuesto</td><td>Costos de venta; ponerse de acuerdo entre herederos</td></tr>
+</tbody>
+</table>
+
+<h2>¿Qué pasa si los hermanos no se ponen de acuerdo?</h2>
+<p>Una opción es que un heredero compre la parte de los otros, con un préstamo o un refinanciamiento. Si no hay acuerdo, cualquiera de los dueños puede pedir a la corte una "partición", que normalmente termina en la venta. Negociar casi siempre sale más barato.</p>
+
+<h2>¿Conviene vender la casa como está?</h2>
+<p>Muchas casas heredadas necesitan trabajo. Puedes venderla "as is" o hacer arreglos pequeños que suban el precio. Un <a href="/blog/cuanto-vale-mi-casa-bay-area/">análisis comparativo de mercado</a> te muestra cuánto vale en cada escenario.</p>
+''',
+        'faq': [
+            ('¿Hay impuesto a la herencia en California?',
+             'No. California no tiene impuesto estatal a la herencia. El impuesto federal al patrimonio solo afecta herencias muy grandes, de más de $15 millones por persona en 2026.'),
+            ('¿Qué pasa si la casa tenía una hipoteca inversa?',
+             'La deuda se paga al vender. Si el saldo es mayor que el valor de la casa, los herederos pueden quedársela pagando el saldo o 95% del valor de tasación, lo que sea menor, o venderla.'),
+            ('¿Tengo que asegurar la casa mientras está vacía?',
+             'Sí. Muchas pólizas limitan la cobertura si la casa queda vacía mucho tiempo. Avisa a la aseguradora y pregunta por una póliza para casa desocupada.'),
+        ],
+        'sources': [
+            ('BOE: Proposición 19', 'https://www.boe.ca.gov/prop19/'),
+            ('BOE: ajuste de la exclusión de la Prop 19 (2025)', 'https://boe.ca.gov/news/2025/NR-25-02.htm'),
+            ('IRS: Publicación 551, base de los bienes', 'https://www.irs.gov/publications/p551'),
+            ('Cortes de California: ayuda con herencias (probate)', 'https://selfhelp.courts.ca.gov/probate'),
+        ],
+    },
+    {
+        'slug': 'adu-california',
+        'category': 'Invertir',
+        'title': 'Construir un ADU en California (2026): reglas, permisos y cómo puede ayudarte a pagar tu casa',
+        'seo_title': 'Construir un ADU en California (2026): reglas y permisos',
+        'desc': 'Guía 2026 para construir un ADU o JADU en tu casa en California: qué permite la ley estatal, permisos en 60 días, sin cuotas de impacto bajo 750 pies cuadrados, cómo financiarlo y cómo afecta impuestos y valor.',
+        'keywords': ['ADU California', 'construir ADU', 'convertir garaje en casa', 'JADU', 'unidad adicional para rentar'],
+        'cities': ['oakland', 'concord', 'hayward', 'san-leandro'],
+        'related': ['fix-and-flip-bay-area-regla-70', 'rentar-o-comprar-casa-bay-area', 'impuesto-a-la-propiedad-california'],
+        'answer': 'En California casi cualquier casa unifamiliar puede agregar un ADU (una unidad adicional, como una casita en el patio o un garaje convertido) y además un JADU de hasta 500 pies cuadrados dentro de la casa. La ciudad debe aprobar o negar una solicitud completa en 60 días, no puede exigir que vivas en la propiedad para tener un ADU y no cobra cuotas de impacto por ADUs de menos de 750 pies cuadrados. En el Bay Area es una forma común de generar renta o de vivir cerca de la familia.',
+        'body': '''
+<h2>¿Qué tipos de ADU hay?</h2>
+<table>
+<thead><tr><th>Tipo</th><th>Qué es</th><th>Lo que debes saber</th></tr></thead>
+<tbody>
+<tr><td>ADU separado</td><td>Una casita nueva en el patio</td><td>La opción más cara, pero la más independiente</td></tr>
+<tr><td>ADU adjunto</td><td>Una ampliación pegada a la casa</td><td>Con entrada propia</td></tr>
+<tr><td>Garaje convertido</td><td>El garaje se vuelve vivienda</td><td>Suele ser más barato; no tienes que reponer el estacionamiento</td></tr>
+<tr><td>JADU</td><td>Hasta 500 pies cuadrados dentro de la casa</td><td>El dueño debe vivir en la casa principal o en el JADU</td></tr>
+</tbody>
+</table>
+
+<h2>¿Qué permite la ley estatal?</h2>
+<ul>
+<li>La ciudad debe aprobar o negar una solicitud completa en 60 días.</li>
+<li>No pueden exigir que el dueño viva en la propiedad para tener un ADU.</li>
+<li>No se cobran cuotas de impacto por ADUs de menos de 750 pies cuadrados.</li>
+<li>Las distancias a los lados y atrás no pueden ser mayores de 4 pies.</li>
+<li>Las ciudades deben permitir al menos un ADU de 800 pies cuadrados, aunque sus reglas sean más estrictas.</li>
+<li>No se exige estacionamiento extra en muchos casos, por ejemplo a media milla del transporte público.</li>
+</ul>
+<p>Cada ciudad tiene su propia ordenanza, pero no puede ser más restrictiva que la ley estatal. El manual de ADU 2026 de HCD, disponible en español, explica todo con detalle.</p>
+
+<h2>¿Cuáles son los pasos?</h2>
+<ol>
+<li>Revisa la zonificación, el tamaño del lote y las conexiones de agua, drenaje y electricidad.</li>
+<li>Pregunta si tu ciudad tiene planos de ADU preaprobados; ahorran tiempo y dinero.</li>
+<li>Prepara planos con un diseñador o arquitecto y pide cotizaciones a contratistas con licencia.</li>
+<li>Solicita el permiso; la ciudad tiene 60 días para responder a una solicitud completa.</li>
+<li>Construye con inspecciones de la ciudad y obtén el certificado final.</li>
+</ol>
+
+<h2>¿Cómo se financia un ADU?</h2>
+<ul>
+<li>Ahorros o una línea de crédito sobre el valor de tu casa (HELOC).</li>
+<li>Refinanciamiento con retiro de efectivo.</li>
+<li>Préstamos de renovación que prestan según el valor después de la obra.</li>
+<li>Si vas a comprar, algunos programas permiten contar parte de la renta del ADU como ingreso. Lee <a href="/blog/cuanto-ganar-para-comprar-casa-bay-area/">cuánto tienes que ganar para comprar</a>.</li>
+</ul>
+
+<h2>¿Cómo afecta el impuesto y el valor de la casa?</h2>
+<p>Solo se vuelve a valorar el valor agregado por el ADU; el resto de la casa mantiene su valor de la Proposición 13. Un ADU con permiso suele subir el valor de la casa y atrae a compradores que buscan renta o espacio para la familia. Normalmente el ADU no se puede vender por separado, aunque algunas ciudades empiezan a permitirlo.</p>
+
+<h2>¿Conviene en una inversión o un Fix & Flip?</h2>
+<p>Agregar un ADU puede subir el valor de reventa (ARV) y hacer que los números de un proyecto funcionen. También alarga el tiempo de obra, así que inclúyelo en tu análisis. Ve <a href="/blog/fix-and-flip-bay-area-regla-70/">cómo calcular un Fix & Flip</a>.</p>
+''',
+        'faq': [
+            ('¿Necesito permiso para convertir mi garaje en vivienda?',
+             'Sí. Una conversión sin permiso puede generar multas, problemas con el seguro y complicaciones al vender. La ley estatal hace que el permiso de un ADU sea más fácil y rápido que antes.'),
+            ('¿Puedo legalizar una unidad que ya construí sin permiso?',
+             'En muchos casos sí. La ley de California da facilidades para legalizar unidades construidas sin permiso antes de 2020, mientras no haya riesgos graves de salud o seguridad.'),
+            ('¿Puedo rentar el ADU?',
+             'Sí. Puedes rentarlo a largo plazo; muchas ciudades prohíben rentas de menos de 30 días. Al rentarlo, sigues las leyes de inquilinos de tu ciudad.'),
+        ],
+        'sources': [
+            ('HCD: manual de ADU 2026 (en español, PDF)', 'https://www.hcd.ca.gov/sites/default/files/docs/policy-and-research/2026-adu-handbook-es.pdf'),
+            ('HCD: unidades de vivienda accesorias (ADU)', 'https://www.hcd.ca.gov/policy-and-research/accessory-dwelling-units'),
         ],
     },
 ]
